@@ -76,4 +76,4 @@ uv run python fve_claims/audit/make_spotcheck.py       # blind label check; scor
 | `PROVENANCE.md` | what the human decided, checked and found by hand |
 
 Agents wrote most of the code and produced the provisional claim labels; the research decisions, the audits and
-the conclusions are the human's. `PROVENANCE.md` records which is which.
+the conclusions are mine. `PROVENANCE.md` records which is which.
