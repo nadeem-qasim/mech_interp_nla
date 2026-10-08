@@ -1,17 +1,0 @@
-[00:40:03 rss=0.5G] artifact checks: 27/27 OK
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:38,  3.42it/s]Loading weights:   4%|▍         | 15/339 [00:00<00:13, 24.51it/s]Loading weights:   7%|▋         | 23/339 [00:01<00:13, 22.88it/s]Loading weights:   8%|▊         | 27/339 [00:01<00:16, 19.41it/s]Loading weights:  12%|█▏        | 39/339 [00:01<00:09, 32.52it/s]Loading weights:  21%|██        | 70/339 [00:01<00:04, 62.54it/s]Loading weights:  24%|██▍       | 83/339 [00:01<00:03, 71.14it/s]Loading weights:  27%|██▋       | 92/339 [00:02<00:04, 51.14it/s]Loading weights:  40%|████      | 137/339 [00:02<00:02, 94.01it/s]Loading weights:  44%|████▎     | 148/339 [00:03<00:04, 47.43it/s]Loading weights:  46%|████▌     | 156/339 [00:03<00:04, 41.25it/s]Loading weights:  51%|█████     | 172/339 [00:03<00:03, 50.87it/s]Loading weights:  53%|█████▎    | 180/339 [00:03<00:03, 50.64it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 87.87it/s]
-[00:40:14 rss=0.2G] TARGET loaded
-Traceback (most recent call last):
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/u0c_check.py", line 171, in <module>
-    main()
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/u0c_check.py", line 92, in main
-    bench["target_doc512_forward_all_hidden"] = timeit(doc_fwd); bench["target_doc512_forward_all_hidden"]["tokens"] = [int(d.shape[1]) for d in docs]
-                                                ^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/u0c_check.py", line 36, in timeit
-    t = time.time(); fn(); torch.mps.synchronize(); ts.append(time.time() - t)
-                     ^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/u0c_check.py", line 90, in doc_fwd
-    d = next(it); hs = tgt.hidden_states(d); i = docs.index(d)
-                                                 ^^^^^^^^^^^^^
-RuntimeError: Boolean value of Tensor with more than one value is ambiguous
-exit=1

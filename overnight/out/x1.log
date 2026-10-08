@@ -1,22 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   7%|▋         | 24/339 [00:00<00:01, 169.66it/s]Loading weights:  13%|█▎        | 44/339 [00:00<00:01, 180.19it/s]Loading weights:  23%|██▎       | 77/339 [00:00<00:01, 151.39it/s]Loading weights:  28%|██▊       | 94/339 [00:00<00:02, 83.74it/s] Loading weights:  31%|███▏      | 106/339 [00:01<00:02, 82.29it/s]Loading weights:  35%|███▍      | 117/339 [00:01<00:03, 57.94it/s]Loading weights:  37%|███▋      | 125/339 [00:02<00:07, 28.01it/s]Loading weights:  39%|███▊      | 131/339 [00:02<00:08, 24.77it/s]Loading weights:  47%|████▋     | 158/339 [00:02<00:03, 46.23it/s]Loading weights:  56%|█████▌    | 190/339 [00:03<00:02, 63.69it/s]Loading weights:  59%|█████▉    | 201/339 [00:03<00:02, 65.52it/s]Loading weights:  63%|██████▎   | 212/339 [00:03<00:02, 61.33it/s]Loading weights:  65%|██████▍   | 220/339 [00:03<00:01, 63.85it/s]Loading weights:  70%|██████▉   | 236/339 [00:03<00:01, 74.34it/s]Loading weights:  72%|███████▏  | 245/339 [00:04<00:01, 58.06it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 83.92it/s]
-[01:22:00 rss=3.9G] TARGET loaded
-[01:23:06 rss=4.0G] TARGET docs 50/200 (1.12 s each)
-[01:24:03 rss=4.1G] TARGET docs 100/200 (1.12 s each)
-[01:24:59 rss=4.1G] TARGET docs 150/200 (1.12 s each)
-[01:25:54 rss=4.1G] TARGET docs 200/200 (1.12 s each)
-[free] RSS 4175 MiB -> 682 MiB (released 3493 MiB)
-[01:25:55 rss=0.7G] activations cached; block-20 max(1−cos) c2 2.2e-16 stim 2.2e-16; norms {16: {'c2': 71.3565673828125, 'stim': 76.34388732910156}, 20: {'c2': 111.65457916259766, 'stim': 113.31340789794922}, 24: {'c2': 290.0032653808594, 'stim': 274.1268005371094}, 27: {'c2': 328.58721923828125, 'stim': 307.784423828125}}
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   2%|▏         | 8/339 [00:00<00:05, 57.59it/s]Loading weights:   7%|▋         | 23/339 [00:00<00:03, 102.92it/s]Loading weights:  10%|█         | 34/339 [00:00<00:03, 89.98it/s] Loading weights:  13%|█▎        | 44/339 [00:00<00:06, 43.03it/s]Loading weights:  15%|█▌        | 51/339 [00:00<00:06, 45.21it/s]Loading weights:  17%|█▋        | 58/339 [00:01<00:05, 49.86it/s]Loading weights:  24%|██▍       | 83/339 [00:01<00:03, 75.37it/s]Loading weights:  27%|██▋       | 92/339 [00:01<00:04, 53.25it/s]Loading weights:  29%|██▉       | 99/339 [00:02<00:12, 19.29it/s]Loading weights:  34%|███▍      | 115/339 [00:03<00:08, 27.49it/s]Loading weights:  36%|███▌      | 121/339 [00:03<00:07, 28.08it/s]Loading weights:  37%|███▋      | 126/339 [00:03<00:07, 29.66it/s]Loading weights:  39%|███▊      | 131/339 [00:03<00:06, 29.82it/s]Loading weights:  40%|████      | 136/339 [00:03<00:08, 24.50it/s]Loading weights:  41%|████▏     | 140/339 [00:04<00:10, 19.62it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 79.43it/s]
-[01:26:00 rss=3.6G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[01:27:10 rss=3.6G] entity 10/40 pairs, forwards 180 (0.39 s each)
-[01:28:18 rss=3.6G] entity 20/40 pairs, forwards 360 (0.38 s each)
-[01:29:27 rss=3.6G] entity 30/40 pairs, forwards 540 (0.38 s each)
-[01:30:36 rss=3.6G] entity 40/40 pairs, forwards 720 (0.38 s each)
-[01:35:11 rss=3.7G] topic 40/160 docs, forwards 1440 (0.38 s each)
-[01:39:48 rss=3.7G] topic 80/160 docs, forwards 2160 (0.38 s each)
-[01:44:08 rss=3.7G] topic 120/160 docs, forwards 2839 (0.38 s each)
-[01:48:13 rss=3.5G] topic 160/160 docs, forwards 3479 (0.38 s each)
-[free] RSS 3609 MiB -> 633 MiB (released 2975 MiB)
-[01:48:14 rss=0.6G] DISCONFIRMATION: 2026-09-08T01:48:14  X1  X1  threshold=entity donor-sensitivity CI (by template) under p1 ≤ 0 at every non-training block (16, 24, 27) → MET; NOT MET if any of the three CIs is entirely > 0  observed=L16: donor 1.6423 [0.4788,2.8855] acc raw 0.637 both 0.275 topic AUROC raw 0.728 corr 0.921 acc raw 0.738; L20: donor 1.7379 [0.6272,3.2762] acc raw 0.600 both 0.225 topic AUROC raw 0.761 corr 0.943 acc raw 0.781; L24: donor 2.9443 [1.1309,4.9711] acc raw 0.700 both 0.400 topic AUROC raw 0.751 corr 0.942 acc raw 0.756; L27: donor 1.8292 [0.4446,3.8050] acc raw 0.600 both 0.225 topic AUROC raw 0.623 corr 0.759 acc raw 0.594; best entity acc L24, best topic acc L20; L20 max |dev| vs t2c 0.000, vs t2a 0.000  NOT MET  MET would mean no readable transfer of the layer-20 AV's entity readout to other layers
-[01:48:14 rss=0.6G] X1 done: NOT MET; donor L16 1.642, L20 1.738, L24 2.944, L27 1.829
-exit=0

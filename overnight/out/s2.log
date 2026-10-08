@@ -1,23 +1,0 @@
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 37/253 [00:00<00:01, 198.68it/s]Loading weights: 100%|██████████| 253/253 [00:00<00:00, 967.14it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:59:50 rss=10.8G] AR loaded: 21 layers, mse_scale=59.867
-[02:59:54 rss=10.9G] 0/200 claims so far 3 forwards 19 (0.21s each)
-[03:01:20 rss=11.0G] 20/200 claims so far 68 forwards 441 (0.20s each)
-[03:02:52 rss=11.0G] 40/200 claims so far 137 forwards 890 (0.20s each)
-[03:04:25 rss=11.0G] 60/200 claims so far 207 forwards 1343 (0.20s each)
-[03:06:00 rss=11.1G] 80/200 claims so far 279 forwards 1807 (0.20s each)
-[03:07:35 rss=11.1G] 100/200 claims so far 350 forwards 2265 (0.21s each)
-[03:08:57 rss=11.1G] 120/200 claims so far 413 forwards 2677 (0.20s each)
-[03:10:22 rss=11.1G] 140/200 claims so far 478 forwards 3101 (0.20s each)
-[03:11:49 rss=11.1G] 160/200 claims so far 544 forwards 3530 (0.20s each)
-[03:13:15 rss=11.1G] 180/200 claims so far 609 forwards 3953 (0.20s each)
-[free] RSS 11366 MiB -> 992 MiB (released 10374 MiB)
-[03:14:37 rss=1.0G] DISCONFIRMATION: 2026-09-06T03:14:37  S2  K2  threshold=CI95 of mean(|Δcos_claim| − mean|Δcos_randspan|) ≤ 0  observed=mean D=0.00578 CI95=[0.00224,0.00964] n_claims=538 n_expl=160; mean|Δcos_all|=0.5349 vs 5×median|Δcos_i|=0.0821 (>=: True)  NOT MET  MET would mean deleting a whole claim is indistinguishable from deleting a random equal-length span
-[03:14:37 rss=1.0G] S2 done

@@ -1,11 +1,0 @@
-[23:57:19 rss=0.4G] audit OK (9 checks); round-3 PREFILL_CC eval: raw AUROC 0.7516 [0.7017,0.7983], prior-corrected 0.9347 [0.9111,0.9580], acc raw 0.775 [0.706,0.838] corr 0.950 [0.912,0.981] swap 0.787 [0.725,0.844]
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:33,  9.99it/s]Loading weights:   9%|▊         | 29/339 [00:00<00:05, 57.46it/s]Loading weights:  10%|█         | 34/339 [00:00<00:06, 49.67it/s]Loading weights:  19%|█▊        | 63/339 [00:00<00:02, 93.55it/s]Loading weights:  22%|██▏       | 74/339 [00:01<00:04, 65.37it/s]Loading weights:  24%|██▍       | 82/339 [00:01<00:04, 59.15it/s]Loading weights:  26%|██▋       | 89/339 [00:01<00:04, 51.82it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 217.36it/s]
-[23:57:23 rss=3.8G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[23:58:41 rss=4.0G] no-injection cache: 199 topics, 199 forwards in 77s
-[23:59:58 rss=4.0G] stim 50/200, forwards 399 (0.38s each)
-[00:01:15 rss=4.0G] stim 100/200, forwards 599 (0.38s each)
-[00:02:31 rss=4.0G] stim 150/200, forwards 799 (0.38s each)
-[00:03:48 rss=4.0G] stim 200/200, forwards 999 (0.38s each)
-[free] RSS 4101 MiB -> 598 MiB (released 3503 MiB)
-[00:03:49 rss=0.6G] DISCONFIRMATION: 2026-09-07T00:03:49  T2a  T2a  threshold=raw AUROC of held-out prefix p3 '<explanation>\nThe document is about' candidate continuation (' topic_true' vs ' topic_foreign'), own activation, eval, CI95 by document ≤ 0.60  observed=AUROC=0.7605 [0.7126,0.8059] n=160; per-token 0.7726 [0.7235,0.8196]; no-injection 0.4862 [0.4295,0.5500]; prior-corrected 0.9431 [0.9214,0.9643]; swap prefers foreign 0.7857 [0.7402,0.8300]; within-pair acc raw 0.781 [0.719,0.844] prior-corrected 0.944 [0.906,0.975] swap 0.800 [0.744,0.856]; pilot raw 0.8144 [0.7268,0.9031] n=40; round-3 PREFILL_CC on the same 160: raw 0.7516 [0.7017,0.7983] prior-corrected 0.9347 [0.9111,0.9580] (prior-corrected NOT pre-registered in round 3)  NOT MET  MET would mean the round-3 topic readout does not hold up on a held-out wording
-[00:03:49 rss=0.6G] T2a done: p3 raw AUROC 0.7605 [0.7126,0.8059] -> NOT MET; prior-corrected 0.9431 [0.9214,0.9643]; swap 0.7857 [0.7402,0.8300]

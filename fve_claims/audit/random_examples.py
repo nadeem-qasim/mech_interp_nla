@@ -2,7 +2,7 @@
 explanation, and every claim with its label and deletion drop. Writes markdown ready to paste. Run from the repo root."""
 import glob, json, random, pandas as pd
 
-OUT, SEED, N_DOCS = "notes/claim_random_examples.md", 2026, 2
+OUT, SEED, N_DOCS = "fve_claims/audit/out/claim_random_examples.md", 2026, 2
 P = {r["pilot_id"]: r for r in map(json.loads, open("data/redocred_pilot/pilot.jsonl"))}
 
 

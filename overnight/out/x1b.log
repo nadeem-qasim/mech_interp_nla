@@ -1,22 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 62/339 [00:00<00:00, 372.06it/s]Loading weights:  29%|██▉       | 100/339 [00:01<00:04, 51.22it/s]Loading weights:  36%|███▋      | 123/339 [00:01<00:03, 59.73it/s]Loading weights:  40%|████      | 137/339 [00:01<00:03, 66.30it/s]Loading weights:  45%|████▍     | 151/339 [00:02<00:04, 44.03it/s]Loading weights:  47%|████▋     | 161/339 [00:02<00:04, 41.78it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 111.96it/s]
-[01:59:22 rss=3.9G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[02:02:46 rss=4.0G] 10/40 stimuli, 10.2 s/gen
-[02:06:03 rss=4.0G] 20/40 stimuli, 10.0 s/gen
-[02:09:18 rss=4.0G] 30/40 stimuli, 9.9 s/gen
-[02:12:33 rss=4.0G] 40/40 stimuli, 9.9 s/gen
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   4%|▍         | 11/253 [00:00<00:03, 66.68it/s]Loading weights:   7%|▋         | 18/253 [00:00<00:04, 54.51it/s]Loading weights:   9%|▉         | 24/253 [00:01<00:21, 10.64it/s]Loading weights:  11%|█         | 28/253 [00:02<00:21, 10.24it/s]Loading weights:  14%|█▍        | 35/253 [00:02<00:16, 13.51it/s]Loading weights:  25%|██▍       | 62/253 [00:02<00:04, 38.24it/s]Loading weights:  28%|██▊       | 72/253 [00:03<00:06, 28.40it/s]Loading weights:  32%|███▏      | 80/253 [00:03<00:08, 21.19it/s]Loading weights:  52%|█████▏    | 132/253 [00:03<00:01, 61.59it/s]Loading weights:  60%|██████    | 152/253 [00:04<00:02, 49.18it/s]Loading weights:  66%|██████▌   | 167/253 [00:04<00:01, 52.68it/s]Loading weights: 100%|██████████| 253/253 [00:04<00:00, 53.58it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:12:39 rss=0.2G] AR loaded: 21 layers, mse_scale=59.867
-[free] RSS 327 MiB -> 538 MiB (released -210 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[free] RSS 538 MiB -> 538 MiB (released -0 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[02:13:15 rss=0.5G] X1b done
-exit=0

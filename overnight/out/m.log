@@ -1,33 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights: 100%|██████████| 339/339 [00:00<00:00, 70817.27it/s]
-[02:14:18 rss=13.7G] TARGET loaded
-[02:19:35 rss=13.9G] gen 25/200 (12.7 s each); correct so far 9
-[02:25:05 rss=13.9G] gen 50/200 (12.9 s each); correct so far 13
-[02:30:16 rss=13.9G] gen 75/200 (12.8 s each); correct so far 21
-[02:35:37 rss=13.9G] gen 100/200 (12.8 s each); correct so far 28
-[02:40:58 rss=13.9G] gen 125/200 (12.8 s each); correct so far 35
-[02:46:22 rss=13.9G] gen 150/200 (12.8 s each); correct so far 39
-[02:51:40 rss=13.9G] gen 175/200 (12.8 s each); correct so far 45
-[02:57:07 rss=13.9G] gen 200/200 (12.8 s each); correct so far 49
-[02:57:07 rss=13.9G] DISCONFIRMATION: 2026-09-08T02:57:07  M  M-gate  threshold=GM: ≥ 20 incorrect and ≥ 20 correct of 200 synthetic multiplications  observed=correct 49, incorrect 151 (no 'Answer:' 147; incorrect with a position 4); mean generation length 194 tokens  PASS  if FAIL, M stops here
-[free] RSS 14400 MiB -> 873 MiB (released 13527 MiB)
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   3%|▎         | 10/339 [00:00<00:10, 32.65it/s]Loading weights:   9%|▉         | 31/339 [00:00<00:05, 61.55it/s]Loading weights:  12%|█▏        | 41/339 [00:00<00:06, 49.65it/s]Loading weights:  14%|█▍        | 47/339 [00:00<00:06, 45.64it/s]Loading weights:  25%|██▌       | 86/339 [00:01<00:02, 87.68it/s]Loading weights:  28%|██▊       | 95/339 [00:01<00:02, 87.48it/s]Loading weights:  31%|███       | 104/339 [00:01<00:03, 65.11it/s]Loading weights:  45%|████▍     | 151/339 [00:02<00:03, 59.33it/s]Loading weights:  47%|████▋     | 158/339 [00:03<00:05, 33.94it/s]Loading weights:  51%|█████     | 173/339 [00:03<00:04, 41.50it/s]Loading weights:  53%|█████▎    | 180/339 [00:03<00:04, 37.62it/s]Loading weights:  56%|█████▌    | 190/339 [00:03<00:03, 39.30it/s]Loading weights:  58%|█████▊    | 196/339 [00:04<00:03, 39.55it/s]Loading weights:  59%|█████▉    | 201/339 [00:04<00:03, 38.50it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 79.25it/s]
-[02:57:50 rss=4.8G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   4%|▎         | 9/253 [00:00<00:04, 49.98it/s]Loading weights:   8%|▊         | 21/253 [00:00<00:09, 23.98it/s]Loading weights:  10%|▉         | 25/253 [00:01<00:14, 15.38it/s]Loading weights:  25%|██▍       | 63/253 [00:01<00:03, 54.84it/s]Loading weights:  30%|██▉       | 75/253 [00:01<00:04, 44.47it/s]Loading weights:  36%|███▋      | 92/253 [00:02<00:02, 59.08it/s]Loading weights:  41%|████      | 104/253 [00:02<00:02, 51.49it/s]Loading weights:  45%|████▍     | 113/253 [00:02<00:03, 39.57it/s]Loading weights:  47%|████▋     | 120/253 [00:02<00:03, 42.43it/s]Loading weights:  50%|█████     | 127/253 [00:03<00:03, 41.51it/s]Loading weights:  53%|█████▎    | 133/253 [00:03<00:04, 27.77it/s]Loading weights:  55%|█████▍    | 138/253 [00:03<00:04, 27.50it/s]Loading weights: 100%|██████████| 253/253 [00:03<00:00, 67.07it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:57:55 rss=0.3G] AR loaded: 21 layers, mse_scale=59.867
-[03:01:32 rss=0.3G] NLA 20/44 (10.8 s each)
-[03:04:53 rss=0.3G] NLA 40/44 (10.4 s each)
-[free] RSS 267 MiB -> 532 MiB (released -264 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[free] RSS 532 MiB -> 532 MiB (released -0 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[03:05:34 rss=0.5G] DISCONFIRMATION: 2026-09-08T03:05:34  M  M  threshold=AUROC(−cos(AR(desc), h), incorrect vs correct) at the model's own 'Answer:' token, CI by problem ≤ 0.60  observed=AUROC=0.2938 [0.0000,0.5706] n=44 (incorrect 4, correct 40); entropy 0.7937 [0.5854,0.9655]; −margin 0.7969 [0.5944,0.9593]; text-only −(yes−no) 0.3875 [0.2245,0.5436]; in-sample logistic AUROC entropy+margin 0.7812 vs +cos 0.8063 (cos coef +0.345, standardised; exploratory); mean cos correct 0.8737 incorrect 0.8829; problems correct 49/200  INCONCLUSIVE  MET would mean reconstruction error does not separate incorrect from correct answers beyond chance-level 0.60
-[03:05:34 rss=0.5G] M done: AUROC(−cos) 0.2938 [0.0000,0.5706] -> INCONCLUSIVE
-exit=0

@@ -1,28 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   6%|▌         | 20/339 [00:00<00:04, 66.22it/s]Loading weights:   8%|▊         | 27/339 [00:00<00:04, 65.58it/s]Loading weights:  10%|█         | 34/339 [00:00<00:08, 35.38it/s]Loading weights:  12%|█▏        | 39/339 [00:02<00:29, 10.21it/s]Loading weights:  12%|█▏        | 42/339 [00:02<00:30,  9.79it/s]Loading weights:  13%|█▎        | 45/339 [00:03<00:31,  9.38it/s]Loading weights:  16%|█▌        | 53/339 [00:03<00:19, 14.63it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 104.77it/s]
-[04:15:17 rss=4.0G] TARGET loaded
-[free] RSS 4112 MiB -> 421 MiB (released 3691 MiB)
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   7%|▋         | 17/253 [00:00<00:03, 61.96it/s]Loading weights:   9%|▉         | 24/253 [00:00<00:04, 49.01it/s]Loading weights:  11%|█▏        | 29/253 [00:00<00:04, 45.37it/s]Loading weights:  13%|█▎        | 34/253 [00:00<00:07, 27.87it/s]Loading weights:  15%|█▌        | 38/253 [00:01<00:08, 26.81it/s]Loading weights:  26%|██▌       | 66/253 [00:01<00:02, 71.56it/s]Loading weights:  30%|███       | 76/253 [00:01<00:02, 67.01it/s]Loading weights:  34%|███▎      | 85/253 [00:01<00:02, 68.38it/s]Loading weights:  63%|██████▎   | 159/253 [00:02<00:00, 94.20it/s]Loading weights:  66%|██████▋   | 168/253 [00:02<00:01, 84.00it/s]Loading weights: 100%|██████████| 253/253 [00:02<00:00, 103.49it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[04:15:21 rss=3.4G] AR loaded: 21 layers, mse_scale=59.867
-[04:15:44 rss=3.5G] AR row 150 forwards 84 (0.27s each)
-[04:16:47 rss=3.6G] AR row 200 forwards 334 (0.26s each)
-[04:17:47 rss=3.6G] AR row 250 forwards 567 (0.26s each)
-[04:18:50 rss=3.6G] AR row 300 forwards 816 (0.26s each)
-[04:19:51 rss=3.6G] AR row 350 forwards 1054 (0.26s each)
-[04:20:54 rss=3.6G] AR row 400 forwards 1300 (0.26s each)
-[04:21:57 rss=3.6G] AR row 450 forwards 1552 (0.26s each)
-[04:23:00 rss=3.6G] AR row 500 forwards 1800 (0.26s each)
-[04:24:06 rss=3.6G] AR row 550 forwards 2058 (0.26s each)
-[04:25:10 rss=3.7G] AR row 600 forwards 2309 (0.26s each)
-[04:26:11 rss=3.7G] AR row 650 forwards 2551 (0.25s each)
-[free] RSS 3747 MiB -> 889 MiB (released 2857 MiB)
-[04:26:37 rss=0.9G] DISCONFIRMATION: 2026-09-06T04:26:37  S3  K3  threshold=CI95 of mean(A−P) ≤ 0; INCONCLUSIVE if straddles or accepted<100  observed=mean A=0.00313 [0.00159,0.00478]; mean P=0.00494 [0.00354,0.00665]; mean A−P=-0.00181 CI95=[-0.00279,-0.00080] n_accepted=490 n_expl=160  MET  MET would mean the score does not respond to an LLM factual contradiction more than to a meaning-preserving rewording
-[04:26:37 rss=0.9G] DISCONFIRMATION: 2026-09-06T04:26:37  S3  K3-det  threshold=same as K3 for deterministic corruption (reported separately, not a pre-registered kill)  observed=mean A_det=0.00376 [0.00231,0.00538]; mean A_det−P=-0.00137 CI95=[-0.00241,-0.00034] n=402  MET  deterministic number/name swap instead of LLM corruption
-[04:26:37 rss=0.9G] S3 done

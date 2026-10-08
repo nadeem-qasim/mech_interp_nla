@@ -1,8 +1,7 @@
 # Re-DocRED pilot set (100 docs) for the NLA experiment
 
 Built 2026-09-09 by `scripts/redocred_pilot.py` (deterministic; re-running reproduces
-`pilot.jsonl` byte-for-byte — verified with `cmp` after two consecutive runs). Human review notes:
-`notes/redocred_pilot_review.md`. Version 2: adds the single-quote pairing rule, the unclosed-quote/
+`pilot.jsonl` byte-for-byte — verified with `cmp` after two consecutive runs). Version 2: adds the single-quote pairing rule, the unclosed-quote/
 bracket cut rule, the DocRED-hole exclusions, `entities_by_type` and per-relation `stated`.
 
 ## Files here
@@ -32,8 +31,8 @@ bracket cut rule, the DocRED-hole exclusions, `entities_by_type` and per-relatio
   distributions (pilot, pool, qualifying), detokenization examples, mention-surface mismatches, hashes.
 
 ## Source files (raw copies are NOT in the repo)
-Raw dir used: `/private/tmp/claude-501/-Users-mbp-qasim-repos-mech-interp-nla-nightshift/ab077dab-5341-4d7d-80de-158beec8b69c/scratchpad/redocred_raw/`
-(pass `--raw-dir` to the script to point elsewhere; the script checks the SHA256s below and warns on mismatch).
+Default raw dir: `data/redocred_raw/` (gitignored; download the files below into it,
+or pass `--raw-dir` to the script to point elsewhere; the script checks the SHA256s below and warns on mismatch).
 
 | file | source | sha256 |
 |---|---|---|
@@ -45,6 +44,9 @@ Raw dir used: `/private/tmp/claude-501/-Users-mbp-qasim-repos-mech-interp-nla-ni
 Re-DocRED: Tan, Zhou, Wang, Bing & Joty, "Revisiting DocRED — Addressing the False Negative Problem
 in Relation Extraction", EMNLP 2022. Dev and test are the fully re-annotated splits; 500 docs each,
 pool = 1000.
+
+License: Re-DocRED and DocRED are released under the MIT license (GitHub `tonytan48/Re-DocRED`,
+`thunlp/DocRED`). The document text is from English Wikipedia (CC BY-SA).
 
 Tokenizers (from the local HF cache, `local_files_only`):
 - 7B: `Qwen/Qwen2.5-7B-Instruct`, snapshot `a09a35458c702b33eeacc393d103063234e8bc28`.
@@ -121,6 +123,5 @@ Overlap with the v1 sample (before these rules): 15 of 100 docs.
 
 ## Regenerate
 ```
-cd /Users/mbp_qasim/repos/mech_interp_nla
 uv run python scripts/redocred_pilot.py            # ~10 s; needs the two tokenizers in the HF cache
 ```

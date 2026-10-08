@@ -1,17 +1,0 @@
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 71/253 [00:00<00:00, 601.78it/s]Loading weights:  52%|█████▏    | 132/253 [00:00<00:00, 155.83it/s]Loading weights:  64%|██████▍   | 163/253 [00:01<00:00, 106.37it/s]Loading weights: 100%|██████████| 253/253 [00:01<00:00, 198.06it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[09:21:32 rss=3.1G] AR loaded: 21 layers, mse_scale=59.867
-[09:21:34 rss=3.1G] 0/160 explanations, forwards 7 (0.29s each)
-[09:22:17 rss=3.2G] 40/160 explanations, forwards 251 (0.18s each)
-[09:22:58 rss=3.2G] 80/160 explanations, forwards 479 (0.18s each)
-[09:23:37 rss=3.3G] 120/160 explanations, forwards 701 (0.18s each)
-[free] RSS 3343 MiB -> 867 MiB (released 2476 MiB)
-[09:24:16 rss=0.8G] R3 done: k*_first=3 k*_last=1 rho(words,cos_alone)=0.7024
-EXIT 0

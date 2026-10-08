@@ -1,10 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 75/339 [00:00<00:03, 85.89it/s]Loading weights:  25%|██▍       | 84/339 [00:01<00:05, 50.21it/s]Loading weights:  26%|██▋       | 89/339 [00:01<00:05, 43.77it/s]Loading weights:  27%|██▋       | 93/339 [00:01<00:06, 37.68it/s]Loading weights:  28%|██▊       | 96/339 [00:02<00:08, 29.00it/s]Loading weights:  30%|███       | 102/339 [00:02<00:07, 32.70it/s]Loading weights:  43%|████▎     | 147/339 [00:02<00:02, 91.49it/s]Loading weights:  47%|████▋     | 161/339 [00:02<00:01, 93.62it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 128.36it/s]
-[01:54:44 rss=4.4G] TARGET loaded
-[01:55:05 rss=4.4G] cells done; block-20 max(1−cos) vs c3_acts 2.2e-16
-[01:55:50 rss=4.5G] claims 100/490 (0.15 s/text)
-[01:56:35 rss=4.5G] claims 200/490 (0.15 s/text)
-[01:57:23 rss=4.5G] claims 300/490 (0.15 s/text)
-[01:58:09 rss=4.5G] claims 400/490 (0.15 s/text)
-[free] RSS 4604 MiB -> 641 MiB (released 3963 MiB)
-[01:58:52 rss=0.6G] N4 done
-exit=0

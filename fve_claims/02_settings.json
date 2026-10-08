@@ -109,9 +109,9 @@
   ],
   "score_blind": true,
   "input_sha256": {
-    "/Users/mbp_qasim/repos/mech_interp_nla/fve_claims/01_av_7b.jsonl": "7e289dd5cbf8e1c8444589f6a4006adc7e62db000eb17a447de2ca5d73112646",
-    "/Users/mbp_qasim/repos/mech_interp_nla/data/redocred_pilot/pilot.jsonl": "5c3f256f764a2064cf7441216fe78390332cc1d39f48bc3d60983a73fa756891",
-    "/Users/mbp_qasim/repos/mech_interp_nla/fve_claims/ANNOTATION_GUIDE.md": "7100fa66a68022a39d65858d5a02bc71edef4b75f1538da296300697412645c3"
+    "fve_claims/01_av_7b.jsonl": "7e289dd5cbf8e1c8444589f6a4006adc7e62db000eb17a447de2ca5d73112646",
+    "data/redocred_pilot/pilot.jsonl": "5c3f256f764a2064cf7441216fe78390332cc1d39f48bc3d60983a73fa756891",
+    "fve_claims/ANNOTATION_GUIDE.md": "7100fa66a68022a39d65858d5a02bc71edef4b75f1538da296300697412645c3"
   },
   "output_sha256": "28cb2e7d7864c8a72438fe92f39a2ec95671c4ab1de6f639bfe7d1d5f9b8453a"
 }

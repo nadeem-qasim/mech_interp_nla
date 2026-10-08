@@ -1,5 +1,5 @@
 Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights: 100%|██████████| 253/253 [00:00<00:00, 76046.93it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
+[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: ~/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
 Key               | Status  | 
 ------------------+---------+-
 model.norm.weight | MISSING | 

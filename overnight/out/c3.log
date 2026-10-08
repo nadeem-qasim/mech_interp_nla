@@ -1,28 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   7%|▋         | 24/339 [00:00<00:01, 188.84it/s]Loading weights:  18%|█▊        | 62/339 [00:00<00:01, 256.64it/s]Loading weights:  33%|███▎      | 112/339 [00:01<00:03, 67.75it/s]Loading weights:  40%|███▉      | 135/339 [00:01<00:02, 68.76it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 193.37it/s]
-[00:25:48 rss=2.7G] TARGET loaded
-[00:25:48 rss=2.3G] 40 cells from 10 templates (dropped []); wording kinds {'primary': 40}
-[free] RSS 2522 MiB -> 524 MiB (released 1998 MiB)
-[00:26:09 rss=0.5G] activations cached; A/B re-derivation max(1−cos) vs c2_acts 2.22e-16; mean cos(hA,hC) 0.9758 cos(hA,hB) 0.9664
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   5%|▍         | 16/339 [00:00<00:02, 154.85it/s]Loading weights:   9%|▉         | 32/339 [00:00<00:04, 71.81it/s] Loading weights:  19%|█▉        | 64/339 [00:00<00:04, 63.04it/s]Loading weights:  21%|██        | 72/339 [00:01<00:04, 65.41it/s]Loading weights:  24%|██▎       | 80/339 [00:01<00:04, 62.92it/s]Loading weights:  26%|██▌       | 87/339 [00:01<00:06, 36.13it/s]Loading weights:  27%|██▋       | 93/339 [00:01<00:06, 38.66it/s]Loading weights:  33%|███▎      | 111/339 [00:01<00:03, 57.62it/s]Loading weights:  36%|███▌      | 122/339 [00:02<00:03, 58.62it/s]Loading weights:  38%|███▊      | 130/339 [00:02<00:04, 42.18it/s]Loading weights:  42%|████▏     | 143/339 [00:02<00:04, 48.50it/s]Loading weights:  44%|████▍     | 150/339 [00:03<00:09, 20.92it/s]Loading weights:  61%|██████    | 207/339 [00:03<00:02, 62.93it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 86.62it/s]
-[00:26:13 rss=5.4G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[00:29:30 rss=5.4G] AV 10/40 cells, 9.8 s/gen
-[00:32:46 rss=5.4G] AV 20/40 cells, 9.8 s/gen
-[00:36:01 rss=5.4G] AV 30/40 cells, 9.8 s/gen
-[00:39:16 rss=5.4G] AV 40/40 cells, 9.8 s/gen
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   4%|▎         | 9/253 [00:00<00:03, 67.00it/s]Loading weights:   7%|▋         | 17/253 [00:00<00:04, 47.91it/s]Loading weights:   9%|▉         | 23/253 [00:00<00:06, 36.78it/s]Loading weights:  23%|██▎       | 57/253 [00:01<00:04, 43.56it/s]Loading weights:  30%|███       | 76/253 [00:02<00:07, 22.48it/s]Loading weights:  42%|████▏     | 106/253 [00:03<00:04, 33.00it/s]Loading weights:  45%|████▌     | 114/253 [00:03<00:04, 33.43it/s]Loading weights:  47%|████▋     | 119/253 [00:03<00:04, 31.53it/s]Loading weights:  49%|████▊     | 123/253 [00:03<00:04, 30.85it/s]Loading weights:  50%|█████     | 127/253 [00:04<00:04, 27.22it/s]Loading weights:  54%|█████▍    | 136/253 [00:04<00:03, 30.83it/s]Loading weights:  55%|█████▌    | 140/253 [00:04<00:05, 20.40it/s]Loading weights: 100%|██████████| 253/253 [00:04<00:00, 52.38it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[00:39:22 rss=0.2G] AR loaded: 21 layers, mse_scale=59.867
-[free] RSS 341 MiB -> 570 MiB (released -228 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[free] RSS 570 MiB -> 570 MiB (released -0 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[00:42:16 rss=0.6G] DISCONFIRMATION: 2026-09-07T00:42:16  C3  C3-score  threshold=CI95 (cluster by template) of mean [mean(M_fact(w1), M_fact(w2)) − mean(M_wording(a), M_wording(b))] ≤ 0  observed=mean diff=0.00782 [-0.00348,0.02407] n=40 n_templates=10 (with file M_fact(w1): 0.00782 [-0.00348,0.02407]); M_fact(w1) 0.01877 M_fact(w2) 0.01632 M_wording(a) 0.00965 M_wording(b) 0.00980; frac cells fact>wording 0.625; activation distance (1−cos): fact edit 0.03238 wording edit 0.02353 diff 0.00884 [-0.00948,0.03447]; dropped templates []  INCONCLUSIVE  MET would mean the reconstruction score discriminates a one-word phrasing change as well as a one-word fact change
-[00:42:16 rss=0.6G] DISCONFIRMATION: 2026-09-07T00:42:16  C3  C3-readout  threshold=CI95 (cluster by template) of mean [D(h_C) − D(h_D)] under p1 (the T2c entity readout at the rephrased contexts) ≤ 0  observed=mean donor sensitivity at w2=1.7723 [0.7183,3.2194] n=40 n_templates=10; at w1 (T2c contexts, re-scored) 1.7379 [0.6272,3.2762]; frac>0 w2 0.875; both-correct w2 0.200 w1 0.225; 2×2: entity main effect 1.7551 [0.6800,3.2433] wording main effect -0.0159 [-0.1922,0.1525] interaction -0.0172 [-0.1051,0.0686]  NOT MET  MET would mean the T2c entity preference does not survive a meaning-preserving phrasing change (only meaningful if T2c was NOT MET)
-[00:42:16 rss=0.6G] C3 done: score 0.00782 [-0.00348,0.02407] -> INCONCLUSIVE; readout 1.7723 [0.7183,3.2194] -> NOT MET

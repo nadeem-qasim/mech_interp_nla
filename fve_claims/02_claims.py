@@ -57,8 +57,8 @@ def write_reports(claims, tasks, output):
     report = ("# Atomic annotation counts (provisional agent labels)\n\n"
               f"Annotated documents: {ids}. Total distinct propositions: {len(claims)}.\n\n"
               "## IDs 0–9\n\n" + count_table(first10) + "\n\n## All annotated documents\n\n" + count_table(claims) + "\n")
-    output.with_name("legacy") / "02_annotation_summary.md".write_text(report)
-    with (output.with_name("legacy") / "02_review_blind_7b.csv").open("w", newline="") as f:
+    (output.parent / "02_annotation_summary.md").write_text(report)
+    with (output.parent / "02_review_blind_7b.csv").open("w", newline="") as f:
         fields = ["pilot_id", "claim_id", "proposition", "av_spans", "type", "subtype", "truth", "related", "prefix_evidence", "rationale", "review_flag", "prefix_text", "explanation"]
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
@@ -72,7 +72,7 @@ def write_reports(claims, tasks, output):
     settings = {"protocol": PROTOCOL, "wall_end": datetime.now(timezone.utc).isoformat(), "annotated_ids": ids,
                 "n_claims": len(claims), "n_review_flags": sum(c["review_flag"] for c in claims),
                 "missing_ids": sorted(set(tasks) - set(ids)), "score_blind": True,
-                "input_sha256": {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs},
+                "input_sha256": {str(p.relative_to(HERE.parent)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs},
                 "output_sha256": hashlib.sha256(output.read_bytes()).hexdigest()}
     output.with_name("02_settings.json").write_text(json.dumps(settings, indent=2))
 
@@ -90,7 +90,7 @@ def main():
         claims = [c for path in a.labels for c in read_jsonl(path)]
         if not claims: ap.error("No atomic annotations supplied")
         validate_claims(claims, tasks)
-        output = a.output or HERE / "legacy/02_atoms_7b.jsonl"
+        output = a.output or HERE / "out/02_atoms_7b.jsonl"
         output.write_text("".join(json.dumps(c, ensure_ascii=False) + "\n" for c in claims))
         write_reports(claims, tasks, output)
         missing = sorted(set(tasks) - {c["pilot_id"] for c in claims})

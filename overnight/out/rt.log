@@ -1,6 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:  21%|██        | 70/339 [00:00<00:01, 196.35it/s]Loading weights:  27%|██▋       | 90/339 [00:00<00:01, 164.24it/s]Loading weights:  45%|████▍     | 151/339 [00:00<00:00, 248.26it/s]Loading weights:  53%|█████▎    | 179/339 [00:00<00:00, 198.27it/s]Loading weights:  59%|█████▉    | 201/339 [00:01<00:00, 176.49it/s]Loading weights:  67%|██████▋   | 227/339 [00:01<00:00, 189.98it/s]Loading weights:  73%|███████▎  | 248/339 [00:01<00:00, 142.70it/s]Loading weights:  78%|███████▊  | 265/339 [00:03<00:02, 32.82it/s] Loading weights: 100%|██████████| 339/339 [00:03<00:00, 100.85it/s]
-[02:13:44 rss=1.3G] TARGET loaded
-[02:13:53 rss=1.4G] DISCONFIRMATION: 2026-09-08T02:13:53  RT  RT-gates  threshold=G0 native m>0 ≥14/16; G1 self-patch max|Δlogit|≤0.01 16/16; G2 twin patch Δm<0 ≥12/16  observed=G0 16/16 (mean m_native 12.902); G1 16/16 (max |Δlogit| 0.00e+00); G2 11/16 (mean Δm -1.242; mean cos(h, h_twin) 0.9900)  FAIL  if FAIL, RT stops here: no layer or position search
-[free] RSS 1457 MiB -> 562 MiB (released 895 MiB)
-[02:13:53 rss=0.6G] RT stopped at the gates
-exit=0

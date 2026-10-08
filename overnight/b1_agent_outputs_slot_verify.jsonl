@@ -1,8 +1,0 @@
-{"task_id": "b1_sv_F2T1f1B_s1", "output": {"asserts": "neither", "other_content": "quotes a closing statement about the first two sentences; no arrival order"}, "agent_model": "claude-fable-5-1", "ts": "2026-09-09T02:24:40"}
-{"task_id": "b1_sv_F2T1f2A_s1", "output": {"asserts": "neither", "other_content": "quotes a story-ending fragment; 'first sentence' is not an arrival order"}, "agent_model": "claude-fable-5-1", "ts": "2026-09-09T02:24:40"}
-{"task_id": "b1_sv_F2T2f2A_s1", "output": {"asserts": "neither", "other_content": "quotes a closing clause; no repair or road-test order asserted"}, "agent_model": "claude-fable-5-1", "ts": "2026-09-09T02:24:40"}
-{"task_id": "b1_sv_F3T1f0B_s1", "output": {"asserts": "neither", "other_content": "mentions four numbered facts; no vial count asserted"}, "agent_model": "claude-fable-5-1", "ts": "2026-09-09T02:24:40"}
-{"task_id": "b1_sv_F3T1f2A_s1", "output": {"asserts": "neither", "other_content": "mentions four data points about a curve; no envelope count"}, "agent_model": "claude-fable-5-1", "ts": "2026-09-09T02:24:40"}
-{"task_id": "b1_sv_F3T1f2B_s0", "output": {"asserts": "neither", "other_content": "numbered attributes of an unknown object; no envelope count"}, "agent_model": "claude-fable-5-1", "ts": "2026-09-09T02:24:40"}
-{"task_id": "b1_sv_F3T2f0A_s1", "output": {"asserts": "neither", "other_content": "mentions three incomplete lines; no session duration asserted"}, "agent_model": "claude-fable-5-1", "ts": "2026-09-09T02:24:40"}
-{"task_id": "b1_sv_F4T1f1B_s0", "output": {"asserts": "neither", "other_content": "log-entry format with an #error tag; no backup outcome asserted"}, "agent_model": "claude-fable-5-1", "ts": "2026-09-09T02:24:40"}

@@ -47,10 +47,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-DEFAULT_RAW = Path(
-    "/private/tmp/claude-501/-Users-mbp-qasim-repos-mech-interp-nla-nightshift/"
-    "ab077dab-5341-4d7d-80de-158beec8b69c/scratchpad/redocred_raw"
-)
+DEFAULT_RAW = REPO / "data" / "redocred_raw"  # raw Re-DocRED JSON files (not in the repo; see data/redocred_pilot/README.md)
 OUT_DIR = REPO / "data" / "redocred_pilot"
 
 SEED = 20260909

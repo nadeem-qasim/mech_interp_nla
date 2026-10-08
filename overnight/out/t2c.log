@@ -1,9 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:  21%|██        | 70/339 [00:00<00:01, 135.33it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 158.73it/s]Loading weights:  35%|███▌      | 120/339 [00:01<00:02, 87.21it/s] Loading weights:  39%|███▉      | 132/339 [00:02<00:05, 36.49it/s]Loading weights:  45%|████▍     | 151/339 [00:02<00:04, 42.23it/s]Loading weights:  47%|████▋     | 159/339 [00:02<00:04, 42.66it/s]Loading weights:  59%|█████▊    | 199/339 [00:03<00:02, 63.18it/s]Loading weights:  73%|███████▎  | 247/339 [00:03<00:00, 105.24it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 103.92it/s]
-[23:52:12 rss=3.4G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[23:52:59 rss=3.6G] pair 10/40, forwards 120 (0.39s each)
-[23:53:45 rss=3.6G] pair 20/40, forwards 240 (0.39s each)
-[23:54:30 rss=3.6G] pair 30/40, forwards 360 (0.38s each)
-[23:55:16 rss=3.6G] pair 40/40, forwards 480 (0.38s each)
-[free] RSS 3644 MiB -> 523 MiB (released 3121 MiB)
-[23:55:17 rss=0.5G] DISCONFIRMATION: 2026-09-06T23:55:17  T2c  T2c  threshold=CI95 (cluster bootstrap by template) of mean [D(h_a) − D(h_b)] under p1 '<explanation>\nThe {noun} mentioned in the passage is', D = lp(' e_a') − lp(' e_b'), ≤ 0  observed=mean donor sensitivity=1.7379 [0.6272,3.2762] n=40 n_templates=10; frac>0=0.775; both-correct raw 0.225 prior-centred 0.150; choice accuracy raw 0.600 [0.525,0.688] centred 0.562 [0.487,0.650] (80 activations); paired AUROC D(h_a) vs D(h_b) 0.6516 [0.5666,0.7475] by template; prior D(h_0)>0 frac 0.625; p2 donor 1.8342 [0.7561,3.0039] both-correct raw 0.175  NOT MET  MET would mean the upstream entity is not readable from the final-token activation by forced prefix
-[23:55:17 rss=0.5G] T2c done: donor=1.7379 [0.6272,3.2762] -> NOT MET; both-correct raw 0.225; acc raw 0.600

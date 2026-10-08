@@ -71,10 +71,9 @@ uv run python fve_claims/audit/make_spotcheck.py       # blind label check; scor
 | `fve_claims/` | the experiment: claims, labels, edits, scores, analysis |
 | `fve_claims/analysis_27b/` | one script per reported number (see its README) |
 | `fve_claims/audit/` | verification: blind label check, re-derivations, random examples |
-| `fve_claims/legacy/` | earlier sentence-level protocol, kept for provenance only |
-| `overnight/` | rounds 1–5 of earlier controlled experiments on the 7B pair (side material) |
-| `notes/` | protocol, comparison with the paper, review sheets, and the human log |
-| `notes/human_log.md` | what the human decided, checked and found by hand |
+| `fve_claims/audit/out/` | blind label check (sheet and key) and the paraphrase samples |
+| `src/`, `scripts/` | 7B NLA library and model loader; dataset builder and checkpoint setup for both NLAs |
+| `PROVENANCE.md` | what the human decided, checked and found by hand |
 
 Agents wrote most of the code and produced the provisional claim labels; the research decisions, the audits and
-the conclusions are the human's. `notes/human_log.md` records which is which.
+the conclusions are the human's. `PROVENANCE.md` records which is which.

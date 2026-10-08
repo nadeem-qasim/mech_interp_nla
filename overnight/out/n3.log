@@ -1,18 +1,0 @@
-[01:48:39 rss=0.4G] rows: 402 accepted det triples → 393 single-token swaps (excluded 9); kinds {'name': 304, 'number': 89}
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   6%|▋         | 16/253 [00:00<00:01, 159.50it/s]Loading weights:  13%|█▎        | 32/253 [00:00<00:01, 124.56it/s]Loading weights:  18%|█▊        | 45/253 [00:00<00:05, 37.97it/s] Loading weights:  21%|██        | 53/253 [00:01<00:09, 21.59it/s]Loading weights:  25%|██▍       | 62/253 [00:01<00:07, 26.05it/s]Loading weights: 100%|██████████| 253/253 [00:01<00:00, 130.34it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[01:48:43 rss=1.7G] AR loaded: 21 layers, mse_scale=59.867
-[01:50:09 rss=1.9G] 100/393 rows, AR forwards 342 (0.25 s each)
-[01:51:33 rss=1.9G] 200/393 rows, AR forwards 682 (0.25 s each)
-[01:52:57 rss=1.9G] 300/393 rows, AR forwards 1022 (0.25 s each)
-[free] RSS 1938 MiB -> 633 MiB (released 1305 MiB)
-[01:54:15 rss=0.6G] DISCONFIRMATION: 2026-09-08T01:54:15  N3  N3  threshold=CI (cluster by explanation) of mean [cost(generic) − cost(wrong specific)], cost(v) = cos(AR(z)) − cos(AR(z_v)), deterministic single-token swaps ≤ 0  observed=mean generic−wrong=-0.00029 [-0.00087,0.00025] n=393 n_expl=158; cost wrong 0.00249 [0.00169,0.00333] generic 0.00220 [0.00153,0.00292] omitted 0.05012 [0.04355,0.05708]; omitted−wrong 0.04763 [0.04108,0.05420]; frac generic>wrong 0.527; number n=89 generic−wrong 0.00015 [-0.00074,0.00113]; name n=304 -0.00041 [-0.00109,0.00019]  INCONCLUSIVE  MET would mean no evidence the frozen AR prefers a thematically matched wrong specific over a generic; says what the frozen scorer rewards, not what training caused
-[01:54:15 rss=0.6G] N3 done: generic−wrong -0.00029 [-0.00087,0.00025] -> INCONCLUSIVE
-exit=0

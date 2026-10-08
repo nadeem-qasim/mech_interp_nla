@@ -1,9 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   3%|▎         | 10/339 [00:00<00:08, 37.63it/s]Loading weights:   4%|▍         | 14/339 [00:00<00:08, 38.05it/s]Loading weights:   7%|▋         | 23/339 [00:00<00:06, 47.44it/s]Loading weights:  16%|█▌        | 55/339 [00:02<00:11, 23.67it/s]Loading weights:  26%|██▌       | 87/339 [00:02<00:06, 36.44it/s]Loading weights:  27%|██▋       | 93/339 [00:02<00:07, 33.97it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 116.97it/s]
-[00:24:45 rss=3.4G] TARGET loaded
-Traceback (most recent call last):
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/c3_phrasing.py", line 270, in <module>
-    main()
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/c3_phrasing.py", line 112, in main
-    cells.append({**{k: p[k] for k in ["pair_id", "template_id", "entity_a", "entity_b", "context_a", "context_b", "n_tokens", "dist_to_end", "cos_ha_hb"]},
-                        ~^^^
-KeyError: 'cos_ha_hb'

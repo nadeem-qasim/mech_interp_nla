@@ -1,21 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:20,  4.19it/s]Loading weights:   1%|          | 2/339 [00:00<01:10,  4.76it/s]Loading weights:   5%|▍         | 16/339 [00:00<00:11, 29.34it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 155.81it/s]Loading weights:  34%|███▍      | 116/339 [00:01<00:03, 72.75it/s] Loading weights: 100%|██████████| 339/339 [00:01<00:00, 205.77it/s]
-[20:27:27 rss=1.3G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[20:27:27 rss=1.3G] ' Yes'=[7414] ' No'=[2308] single-token=True
-[20:30:06 rss=1.4G] no-injection cache: 400 forwards in 158s
-[20:31:42 rss=1.4G] stim 25/200, forwards 650 (0.15s each)
-[20:33:20 rss=1.4G] stim 50/200, forwards 900 (0.22s each)
-[20:34:57 rss=1.4G] stim 75/200, forwards 1150 (0.25s each)
-[20:36:34 rss=1.4G] stim 100/200, forwards 1400 (0.28s each)
-[20:38:10 rss=1.4G] stim 125/200, forwards 1650 (0.29s each)
-[20:39:48 rss=1.4G] stim 150/200, forwards 1900 (0.31s each)
-[20:41:25 rss=1.4G] stim 175/200, forwards 2150 (0.32s each)
-[20:43:02 rss=1.4G] stim 200/200, forwards 2400 (0.32s each)
-[20:46:52 rss=1.4G] claims 200 rows, forwards 2984
-[20:50:45 rss=1.4G] claims 400 rows, forwards 3568
-[20:54:58 rss=1.4G] claims 600 rows, forwards 4204
-[20:59:24 rss=1.5G] claims 800 rows, forwards 4868
-[free] RSS 1491 MiB -> 670 MiB (released 821 MiB)
-[21:01:26 rss=0.7G] DISCONFIRMATION: 2026-09-06T21:01:26  T2  T2  threshold=AUROC of candidate-continuation log-prob (' {topic_true}' vs ' {topic_foreign}' after '<explanation>\nThe passage concerns'), eval, CI95 by document ≤ 0.60  observed=AUROC=0.7516 CI95=[0.7017,0.7983] n=160; per-token 0.7479 [0.6961,0.7950]; no-injection 0.4880 [0.4315,0.5508]; prior-corrected 0.9347; swap prefers foreign 0.7749; topic-absent subset (n=154) 0.7482 [0.6993,0.7964]  NOT MET  MET would mean the prefilled-continuation readout cannot tell the document's own topic from a foreign one
-[21:01:26 rss=0.7G] DISCONFIRMATION: 2026-09-06T21:01:26  T2  T2-yesno  threshold=AUROC of yes−no logit for the true vs foreign topic question, eval, CI95 by document ≤ 0.60 (threshold-table wording; reported alongside)  observed=AUROC=0.5502 CI95=[0.5227,0.5777] n=160; no-injection 0.4969; mean yes−no under no injection: true-q +2.630 foreign-q +2.648 conf +2.438 torn +3.562  MET  a general preference for Yes or for the commoner noun is not evidence; compare with the no-injection AUROC
-[21:01:26 rss=0.7G] DISCONFIRMATION: 2026-09-06T21:01:26  T2  T2-claims  threshold=single-word claim corruptions (reported, not a pre-registered kill): CI95 of mean[(lp_orig − lp_corrupt) injected − same with no injection]  observed=LLM corrupt n=298 n_expl=147: injected 9.7822 [8.9749,10.5217], no-inj 1.3875, diff 8.3947 [7.4664,9.3455], frac orig>corrupt inj 0.973 noinj 0.638; det n=393: diff 11.6787 [10.6376,12.7097]  NOT MET  ≤0 would mean the injected activation does not raise the original word over its corruption beyond the prompt-only prior
-[21:01:26 rss=0.7G] T2 done: cc AUROC=0.7516 [0.7017,0.7983] -> NOT MET; yes/no 0.5502; no-inj cc 0.4880

@@ -1,4 +1,4 @@
-"""Shared pieces for fve_claims. Imports the model classes from overnight/nla_lib.py (read-only) so the folder stays small;
+"""Shared pieces for fve_claims. Imports the 7B model classes from src/nla_lib.py so the folder stays small;
 everything else (paths, settings, FVE, sentence handling) is local to this folder."""
 import json, re, subprocess, sys, time
 from pathlib import Path
@@ -7,7 +7,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 OUT = HERE / "out"
 OUT.mkdir(exist_ok=True)
-sys.path.insert(0, str(ROOT / "overnight"))
+sys.path.insert(0, str(ROOT / "src"))
 import nla_lib as L  # noqa: E402  (Target, AV, AR, cos, to_cpu_f32, parse_explanation, has_cjk)
 
 PILOT = ROOT / "data/redocred_pilot/pilot.jsonl"
@@ -43,7 +43,7 @@ def read_jsonl(p: Path) -> list[dict]:
 
 
 def split_sentences(text: str) -> list[str]:
-    """Quote-aware sentence split (overnight/r4_lib.split_claims_quote_aware, copied): never split inside an open double quote."""
+    """Quote-aware sentence split: never split inside an open double quote."""
     out = []
     for line in (text or "").split("\n"):
         cuts = [m.start() for m in SENT_RE.finditer(line) if line[:m.start()].count('"') % 2 == 0]

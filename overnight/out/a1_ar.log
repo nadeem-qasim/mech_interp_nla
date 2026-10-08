@@ -1,63 +1,0 @@
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 31/253 [00:00<00:01, 144.29it/s]Loading weights:  25%|██▍       | 62/253 [00:00<00:01, 160.99it/s]Loading weights:  31%|███       | 79/253 [00:00<00:02, 81.39it/s] Loading weights:  36%|███▌      | 90/253 [00:01<00:02, 57.51it/s]Loading weights:  39%|███▊      | 98/253 [00:01<00:03, 41.95it/s]Loading weights:  61%|██████▏   | 155/253 [00:01<00:00, 106.48it/s]Loading weights:  70%|██████▉   | 177/253 [00:01<00:00, 107.84it/s]Loading weights:  77%|███████▋  | 196/253 [00:02<00:00, 77.59it/s] Loading weights: 100%|██████████| 253/253 [00:02<00:00, 105.68it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:51:52 rss=1.7G] AR loaded: 21 layers, mse_scale=59.867
-[02:52:07 rss=1.8G] A1 ar: 50/459 (0.29 s/forward)
-[02:52:17 rss=1.8G] A1 ar: 100/459 (0.29 s/forward)
-[02:52:28 rss=1.8G] A1 ar: 150/459 (0.28 s/forward)
-[02:52:38 rss=1.8G] A1 ar: 200/459 (0.28 s/forward)
-[02:52:49 rss=1.8G] A1 ar: 250/459 (0.28 s/forward)
-[02:53:03 rss=1.8G] A1 ar: 300/459 (0.28 s/forward)
-[02:53:17 rss=1.8G] A1 ar: 350/459 (0.28 s/forward)
-[02:53:30 rss=1.8G] A1 ar: 400/459 (0.28 s/forward)
-[02:53:41 rss=1.8G] A1 ar: 450/459 (0.27 s/forward)
-[free] RSS 1850 MiB -> 636 MiB (released 1214 MiB)
-[02:53:43 rss=0.6G] A1 ar done: 459/459 texts
-[02:53:44 rss=0.6G] DISCONFIRMATION: 2026-09-09T02:53:44  A1  A1  threshold=CI95 (cluster by context, eval) of mean G = μ_correct − mean_false μ_m over valid paraphrases (orig excluded) ≤ 0 → MET; > 0 → NOT MET; straddles or eligible eval slots < 30 → INCONCLUSIVE  observed=mean G=0.00319 [-0.00035,0.00674] n=4 k=4 (eligible eval slots in primary 4 of 39 eval slots; 33 eligible); correct-ranks-first 0.500 [0.000,1.000] n=4 k=4; frac comparisons won 0.625 [0.250,1.000] n=4 k=4; G orig-only 0.00300 [-0.00025,0.00626] n=4 k=4; by category (μ_correct − μ_false): detail_sub 0.00298 [-0.00115,0.00710] n=4 k=4; entity_sub 0.00196 [-0.00014,0.00499] n=3 k=3  INCONCLUSIVE  MET/INCONCLUSIVE = no detectable preference for the correct meaning under this scorer with this n (never 'the information is absent')
-[02:53:44 rss=0.6G] DISCONFIRMATION: 2026-09-09T02:53:44  A1  A1-nat  threshold=CI95 (by context, eval) of mean [μ_correction − μ_original] on natural-error slots ≤ 0 → MET; > 0 → NOT MET; straddles or natural-error eval slots < 15 → INCONCLUSIVE (count reported; injected errors never substituted)  observed=mean [μ_correction − μ_original]=0.00113 [-0.00176,0.00465] n=4 k=4 (natural-error eval slots 4; contradicted eval originals 37; valid corrections 7 of 46); orig-only 0.00102 [-0.00145,0.00369] n=4 k=4  INCONCLUSIVE  MET/INCONCLUSIVE = the scorer does not detectably prefer the corrected version of the AV's own errors at this n
-Traceback (most recent call last):
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3641, in get_loc
-    return self._engine.get_loc(casted_key)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas/_libs/index.pyx", line 583, in pandas._libs.index.StringObjectEngine._check_type
-KeyError: False
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_natural.py", line 431, in <module>
-    main()
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_natural.py", line 425, in main
-    a1_analyze.run(labels=None)
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_analyze.py", line 221, in run
-    g = Pe[Pe.transform == tr]; lines.append(cirow(f"V, {tr} (eval, valid)", g.V, g.context_id))
-        ~~^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/frame.py", line 4378, in __getitem__
-    indexer = self.columns.get_loc(key)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
-    raise KeyError(key) from err
-KeyError: False
-EXIT 1
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 38/253 [00:00<00:03, 68.70it/s]Loading weights:  25%|██▍       | 63/253 [00:00<00:02, 76.10it/s]Loading weights:  81%|████████  | 204/253 [00:00<00:00, 308.22it/s]Loading weights: 100%|██████████| 253/253 [00:00<00:00, 267.82it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:54:21 rss=3.7G] AR loaded: 21 layers, mse_scale=59.867
-[free] RSS 3802 MiB -> 663 MiB (released 3139 MiB)
-[02:54:21 rss=0.6G] A1 ar done: 459/459 texts
-[02:54:22 rss=0.6G] A1 analysis written (claude); A1 INCONCLUSIVE (n=4), A1-nat INCONCLUSIVE (n=4)
-[02:54:22 rss=0.6G] A1 done: 27.0 min cumulative (cap 210)

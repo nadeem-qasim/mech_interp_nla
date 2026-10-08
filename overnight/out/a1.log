@@ -1,27 +1,0 @@
-[02:26:50 rss=0.7G] A1 select: 410 candidate documents (>=256 tokens, not in stimuli)
-[02:26:50 rss=0.7G] A1 select: 40 contexts from 40 documents examined (skipped 0)
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   5%|▌         | 17/339 [00:00<00:02, 127.97it/s]Loading weights:   9%|▉         | 30/339 [00:00<00:05, 55.84it/s] Loading weights:  17%|█▋        | 56/339 [00:00<00:03, 90.73it/s]Loading weights:  20%|██        | 68/339 [00:00<00:03, 90.32it/s]Loading weights:  26%|██▋       | 89/339 [00:00<00:02, 97.01it/s]Loading weights:  32%|███▏      | 108/339 [00:01<00:02, 111.12it/s]Loading weights:  40%|███▉      | 135/339 [00:01<00:01, 145.78it/s]Loading weights:  45%|████▍     | 152/339 [00:01<00:01, 95.55it/s] Loading weights:  53%|█████▎    | 178/339 [00:03<00:04, 33.48it/s]Loading weights:  55%|█████▌    | 188/339 [00:03<00:04, 37.51it/s]Loading weights:  62%|██████▏   | 210/339 [00:03<00:02, 52.43it/s]Loading weights:  66%|██████▌   | 223/339 [00:03<00:01, 60.13it/s]Loading weights:  70%|██████▉   | 236/339 [00:03<00:01, 55.94it/s]Loading weights:  73%|███████▎  | 247/339 [00:03<00:01, 56.95it/s]Loading weights:  81%|████████  | 275/339 [00:04<00:00, 79.07it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 81.57it/s]
-[02:26:56 rss=3.8G] TARGET loaded
-[free] RSS 3923 MiB -> 648 MiB (released 3275 MiB)
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:02, 123.49it/s]Loading weights:   9%|▉         | 31/339 [00:00<00:04, 64.49it/s] Loading weights:  12%|█▏        | 39/339 [00:00<00:04, 67.41it/s]Loading weights:  17%|█▋        | 57/339 [00:00<00:03, 74.94it/s]Loading weights:  19%|█▉        | 65/339 [00:01<00:06, 44.77it/s]Loading weights:  44%|████▍     | 149/339 [00:01<00:01, 127.16it/s]Loading weights:  48%|████▊     | 162/339 [00:01<00:01, 125.88it/s]Loading weights:  52%|█████▏    | 175/339 [00:01<00:01, 118.76it/s]Loading weights:  58%|█████▊    | 196/339 [00:01<00:01, 121.87it/s]Loading weights:  61%|██████▏   | 208/339 [00:03<00:03, 37.92it/s] Loading weights:  67%|██████▋   | 228/339 [00:03<00:02, 42.74it/s]Loading weights:  78%|███████▊  | 265/339 [00:03<00:01, 57.86it/s]Loading weights:  81%|████████  | 274/339 [00:04<00:01, 55.47it/s]Loading weights:  86%|████████▌ | 290/339 [00:04<00:00, 64.76it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 81.09it/s]
-[02:27:25 rss=3.6G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[free] RSS 3604 MiB -> 575 MiB (released 3029 MiB)
-[02:34:03 rss=0.6G] wrote 56 tasks to a1_agent_tasks_slot_verify.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_slot_verify.jsonl 56
-EXIT 0
-[02:35:25 rss=0.6G] wrote 54 tasks to a1_agent_tasks_label_orig.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_label_orig.jsonl 54
-[02:38:49 rss=0.6G] wrote 46 tasks to a1_agent_tasks_correction.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_correction.jsonl 46
-[02:40:25 rss=0.5G] wrote 54 tasks to a1_agent_tasks_corrcheck.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_corrcheck.jsonl 54
-[02:42:44 rss=0.6G] wrote 94 tasks to a1_agent_tasks_corrupt.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_corrupt.jsonl 94
-[02:44:35 rss=0.6G] wrote 87 tasks to a1_agent_tasks_candcheck.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_candcheck.jsonl 87
-[02:46:05 rss=0.6G] wrote 70 tasks to a1_agent_tasks_label_cand.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_label_cand.jsonl 70
-[02:47:05 rss=0.6G] wrote 124 tasks to a1_agent_tasks_rewrite.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_rewrite.jsonl 124
-[02:50:54 rss=0.6G] wrote 248 tasks to a1_agent_tasks_equiv.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/a1_agent_tasks_equiv.jsonl 248

@@ -1,28 +1,0 @@
-[01:06:17 rss=0.4G] rows: 490 accepted → 211 eligible (excluded last-claim 147, repeated changed word 132); condition-3 feasibility: available≥snippet 86, valid span 74
-[01:06:17 rss=0.4G] DISCONFIRMATION: 2026-09-08T01:06:17  X3  X3-gate  threshold=feasibility: rows with a valid equal-length non-local deletion (condition 3) ≥ 100  observed=eligible rows 211 (of 490 accepted; last-claim 147, repeated changed word 132 excluded); available words ≥ snippet words: 86; valid contiguous span: 74  FAIL  if FAIL, condition 3 runs on the eligible rows and I is reported INCONCLUSIVE with n
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   0%|          | 1/253 [00:00<02:04,  2.03it/s]Loading weights: 100%|██████████| 253/253 [00:00<00:00, 508.41it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[01:06:21 rss=1.7G] AR loaded: 21 layers, mse_scale=59.867
-[01:07:37 rss=1.9G] AR 50/211 rows, forwards 335 (0.23 s each)
-[01:08:44 rss=1.9G] AR 100/211 rows, forwards 642 (0.22 s each)
-[01:09:53 rss=1.9G] AR 150/211 rows, forwards 955 (0.22 s each)
-[01:10:58 rss=1.9G] AR 200/211 rows, forwards 1256 (0.22 s each)
-[free] RSS 1949 MiB -> 667 MiB (released 1282 MiB)
-[01:11:16 rss=0.7G] DISCONFIRMATION: 2026-09-08T01:11:16  X3  X3  threshold=CI (cluster bootstrap by explanation) of mean I = (G_2 − G_1) − (G_3 − G_1), G_c = cos(AR(T_c),h) − cos(AR(F_c),h) ≤ 0; INCONCLUSIVE if condition-3 rows < 100  observed=mean I=-0.00057 [-0.00401,0.00206] n=74 n_expl=53; G_1 0.00115 [0.00000,0.00269] G_2 0.00217 [0.00042,0.00433] G_3 0.00275 [0.00052,0.00589]; G_2−G_1 0.00102 [0.00003,0.00223] G_3−G_1 0.00160 [-0.00030,0.00466]; A−P margins: c1 -0.00190 c2 -0.00317 c3 -0.00501; AUROC(Δcorrupt vs Δparaphrase) c1 0.2894 c2 0.4060 c3 0.3203; mean cos(T) c1 0.8727 c2 0.7952 c3 0.8567; eligible 211 (cond-3 valid 74)  INCONCLUSIVE  MET would mean removing the snippet does not improve factual discrimination more than removing comparable other text; this is a property of the frozen scorer, not of training
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   5%|▌         | 17/339 [00:00<00:03, 104.98it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 105.86it/s]Loading weights:  12%|█▏        | 39/339 [00:00<00:05, 53.75it/s] Loading weights:  14%|█▍        | 47/339 [00:00<00:06, 47.92it/s]Loading weights:  16%|█▌        | 53/339 [00:00<00:06, 46.31it/s]Loading weights:  17%|█▋        | 59/339 [00:01<00:16, 16.72it/s]Loading weights:  19%|█▊        | 63/339 [00:02<00:21, 12.91it/s]Loading weights:  19%|█▉        | 66/339 [00:02<00:22, 12.27it/s]Loading weights:  20%|██        | 69/339 [00:03<00:20, 12.88it/s]Loading weights:  24%|██▍       | 82/339 [00:03<00:11, 22.42it/s]Loading weights:  25%|██▌       | 86/339 [00:03<00:10, 23.57it/s]Loading weights:  47%|████▋     | 159/339 [00:03<00:01, 117.14it/s]Loading weights:  66%|██████▌   | 223/339 [00:03<00:00, 155.21it/s]Loading weights:  72%|███████▏  | 243/339 [00:04<00:00, 126.66it/s]Loading weights:  76%|███████▋  | 259/339 [00:04<00:00, 126.54it/s]Loading weights:  81%|████████  | 274/339 [00:04<00:00, 93.64it/s] Loading weights: 100%|██████████| 339/339 [00:04<00:00, 73.35it/s]
-[01:11:23 rss=1.4G] TARGET loaded
-[01:13:03 rss=0.8G] judge 50/211 (1.00 s/gen)
-[01:14:40 rss=1.0G] judge 100/211 (0.98 s/gen)
-[01:16:07 rss=1.1G] judge 150/211 (0.95 s/gen)
-[01:17:40 rss=1.2G] judge 200/211 (0.94 s/gen)
-[free] RSS 1261 MiB -> 1223 MiB (released 38 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[01:18:01 rss=1.2G] X3 done: I=-0.00057 [-0.00401,0.00206] -> INCONCLUSIVE; G1 0.00115 G2 0.00217 G3 0.00275
-exit=0

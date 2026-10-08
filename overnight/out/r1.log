@@ -1,39 +1,0 @@
-[09:09:15 rss=0.4G] 490 accepted triples, 402 with corrupt_det, 1860 distinct texts
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:17, 18.93it/s]Loading weights:  19%|█▊        | 63/339 [00:00<00:01, 224.52it/s]Loading weights:  24%|██▍       | 82/339 [00:00<00:01, 205.65it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 193.58it/s]Loading weights:  35%|███▍      | 118/339 [00:01<00:02, 81.21it/s] Loading weights:  39%|███▊      | 131/339 [00:01<00:05, 40.31it/s]Loading weights:  41%|████▏     | 140/339 [00:02<00:04, 42.42it/s]Loading weights:  44%|████▎     | 148/339 [00:02<00:04, 40.11it/s]Loading weights:  46%|████▌     | 155/339 [00:02<00:04, 40.01it/s]Loading weights:  47%|████▋     | 161/339 [00:02<00:04, 42.42it/s]Loading weights:  51%|█████▏    | 174/339 [00:02<00:03, 50.39it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 121.47it/s]
-[09:09:21 rss=3.6G] TARGET loaded
-[09:09:23 rss=3.7G] target 0/1860 n_tok=27
-[09:09:48 rss=3.8G] target 200/1860 n_tok=22
-[09:10:21 rss=3.8G] target 400/1860 n_tok=26
-[09:10:57 rss=3.8G] target 600/1860 n_tok=62
-[09:11:29 rss=3.9G] target 800/1860 n_tok=25
-[09:11:54 rss=3.9G] target 1000/1860 n_tok=58
-[09:12:29 rss=3.9G] target 1200/1860 n_tok=44
-[09:13:01 rss=3.9G] target 1400/1860 n_tok=52
-[09:13:33 rss=3.9G] target 1600/1860 n_tok=51
-[09:14:00 rss=3.9G] target 1800/1860 n_tok=22
-[free] RSS 4007 MiB -> 723 MiB (released 3283 MiB)
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:  11%|█         | 27/253 [00:00<00:01, 193.19it/s]Loading weights:  19%|█▊        | 47/253 [00:00<00:02, 70.09it/s] Loading weights:  32%|███▏      | 82/253 [00:00<00:01, 111.68it/s]Loading weights:  39%|███▊      | 98/253 [00:00<00:01, 120.74it/s]Loading weights:  45%|████▌     | 114/253 [00:01<00:01, 93.31it/s]Loading weights:  50%|████▉     | 126/253 [00:01<00:01, 71.77it/s]Loading weights:  62%|██████▏   | 157/253 [00:01<00:00, 108.01it/s]Loading weights:  68%|██████▊   | 172/253 [00:01<00:00, 89.77it/s] Loading weights:  73%|███████▎  | 185/253 [00:01<00:00, 93.00it/s]Loading weights: 100%|██████████| 253/253 [00:02<00:00, 124.97it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[09:14:12 rss=0.6G] AR loaded: 21 layers, mse_scale=59.867
-[09:14:14 rss=0.6G] AR 0/1860
-[09:14:33 rss=0.6G] AR 200/1860
-[09:14:59 rss=0.6G] AR 400/1860
-[09:15:30 rss=0.7G] AR 600/1860
-[09:15:55 rss=0.7G] AR 800/1860
-[09:16:14 rss=0.7G] AR 1000/1860
-[09:16:40 rss=0.7G] AR 1200/1860
-[09:17:05 rss=0.7G] AR 1400/1860
-[09:17:30 rss=0.7G] AR 1600/1860
-[09:17:50 rss=0.7G] AR 1800/1860
-[free] RSS 694 MiB -> 686 MiB (released 8 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[09:17:55 rss=0.8G] DISCONFIRMATION: 2026-09-06T09:17:55  R1  R1  threshold=CI95 of mean(d_corr_T − d_para_T), last-token, n>=300, ≤ 0  observed=mean d_corr_T=0.03952 [0.03112,0.04722]; mean d_para_T=0.13357 [0.12455,0.14228]; mean S_T=-0.09405 CI95=[-0.10376,-0.08445] n=490 n_expl=160  MET  MET would mean the target's own layer-20 representation of the claim text is no more sensitive to the factual change than to rewording (blindness upstream of the AR)
-[09:17:55 rss=0.8G] R1 done: S_T=-0.09405 [-0.10376,-0.08445] MET; S_AR=-0.04945
-EXIT 0

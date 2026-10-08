@@ -1,7 +1,7 @@
 [project]
-name = "mech-interp"
+name = "mech-interp-nla"
 version = "0.1.0"
-description = "Local mech-interp environment for the natural-language-autoencoder (NLA) project: Qwen on MPS via HF transformers + raw forward hooks."
+description = "Claim-deletion tests of natural language autoencoder (NLA) reconstructors on open Qwen NLAs."
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
@@ -11,23 +11,16 @@ dependencies = [
     "safetensors",
     "huggingface_hub",
     "scikit-learn",
+    "scipy",
+    "pyyaml",
     "numpy",
     "pandas",
     "matplotlib",
     "ipython",
     "ipykernel",
     "datasets",
-    "einops",
     "tqdm",
-    "circuitsvis>=1.43.3",
-    "lovely-tensors>=0.1.22",
-    "plotly>=7.0.0",
-    "nbformat>=4.2.0",
-    "seaborn>=0.13.2",
-    "torchinfo>=1.8.0",
-    "ipywidgets>=8.1.9",
     "peft>=0.20.0",
-    "optimum-quanto>=0.2.7",
 ]
 
 [tool.uv]

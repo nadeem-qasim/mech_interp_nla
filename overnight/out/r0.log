@@ -1,27 +1,0 @@
-[09:03:27 rss=0.4G] artifact counts OK: {'stimuli': 200, 'explanations': 200, 'claims': 671, 's3_edits': 538, 's3_edit_ok': 490}
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   6%|▌         | 19/339 [00:00<00:02, 136.20it/s]Loading weights:  10%|▉         | 33/339 [00:00<00:03, 99.63it/s] Loading weights:  13%|█▎        | 44/339 [00:00<00:02, 101.60it/s]Loading weights:  16%|█▌        | 55/339 [00:00<00:05, 51.45it/s] Loading weights:  19%|█▊        | 63/339 [00:00<00:05, 52.27it/s]Loading weights:  21%|██        | 70/339 [00:01<00:06, 39.38it/s]Loading weights:  22%|██▏       | 76/339 [00:01<00:10, 25.45it/s]Loading weights:  24%|██▎       | 80/339 [00:01<00:10, 25.31it/s]Loading weights:  28%|██▊       | 95/339 [00:02<00:06, 39.12it/s]Loading weights:  30%|██▉       | 101/339 [00:02<00:07, 32.37it/s]Loading weights:  35%|███▌      | 119/339 [00:02<00:05, 40.33it/s]Loading weights:  37%|███▋      | 124/339 [00:03<00:08, 26.50it/s]Loading weights:  40%|████      | 137/339 [00:03<00:05, 36.81it/s]Loading weights:  42%|████▏     | 143/339 [00:03<00:06, 32.13it/s]Loading weights:  44%|████▎     | 148/339 [00:04<00:09, 19.94it/s]Loading weights:  45%|████▍     | 152/339 [00:04<00:09, 19.63it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 73.80it/s]
-[09:03:38 rss=0.8G] TARGET loaded
-[09:03:40 rss=0.7G] acts 0/200 seq_len=512 pos=437 norm20=126.2
-[09:04:37 rss=0.8G] acts 50/200 seq_len=512 pos=214 norm20=118.3
-[09:05:33 rss=0.8G] acts 100/200 seq_len=512 pos=254 norm20=129.6
-[09:06:30 rss=0.8G] acts 150/200 seq_len=512 pos=70 norm20=127.7
-[09:07:25 rss=0.8G] acts_L20.npz regenerated in 226s; 0 tokenisation mismatches
-[free] RSS 849 MiB -> 638 MiB (released 210 MiB)
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:  11%|█         | 27/253 [00:00<00:01, 153.04it/s]Loading weights:  17%|█▋        | 43/253 [00:00<00:03, 57.29it/s] Loading weights:  30%|███       | 76/253 [00:00<00:01, 106.93it/s]Loading weights:  38%|███▊      | 95/253 [00:01<00:01, 88.19it/s] Loading weights:  43%|████▎     | 109/253 [00:01<00:01, 94.66it/s]Loading weights:  48%|████▊     | 122/253 [00:01<00:01, 65.75it/s]Loading weights:  56%|█████▌    | 142/253 [00:01<00:01, 81.30it/s]Loading weights:  61%|██████    | 154/253 [00:03<00:03, 26.98it/s]Loading weights:  64%|██████▍   | 162/253 [00:03<00:03, 29.25it/s]Loading weights: 100%|██████████| 253/253 [00:03<00:00, 76.76it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[09:07:29 rss=1.0G] AR loaded: 21 layers, mse_scale=59.867
-[09:07:31 rss=1.0G] AR 0/200
-[09:07:44 rss=1.0G] AR 50/200
-[09:07:58 rss=1.0G] AR 100/200
-[09:08:12 rss=1.0G] AR 150/200
-[free] RSS 1019 MiB -> 633 MiB (released 386 MiB)
-[09:08:25 rss=0.6G] recon_L20.npz regenerated
-[09:08:25 rss=0.6G] R0 done: mean cos_own eval=0.8820 (round 1 0.882); accepted=True
-EXIT 0

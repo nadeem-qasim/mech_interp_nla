@@ -176,7 +176,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--positions", type=int, nargs="+", default=[34, 35, 38, 40])
     ap.add_argument("--n-new", type=int, default=200)
-    ap.add_argument("--out", default="notes/nla_setup/nla7b_roundtrip_out.json")
+    ap.add_argument("--out", default="fve_claims/out/nla7b_roundtrip_out.json")
     args = ap.parse_args()
 
     log("phase 1: target extraction")

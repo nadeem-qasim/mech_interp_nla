@@ -1,12 +1,0 @@
-[00:05:45 rss=0.4G] 691 rows; prefixes match the file; in_ctx 192, in_ctx_right 192, corrupt_in_ctx 24
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:  30%|███       | 103/339 [00:00<00:00, 470.96it/s]Loading weights:  45%|████▍     | 151/339 [00:00<00:00, 307.66it/s]Loading weights:  63%|██████▎   | 212/339 [00:01<00:00, 162.71it/s]Loading weights:  79%|███████▉  | 268/339 [00:02<00:00, 96.13it/s] Loading weights:  84%|████████▍ | 284/339 [00:02<00:00, 80.99it/s]Loading weights: 100%|██████████| 339/339 [00:02<00:00, 135.10it/s]
-[00:05:49 rss=2.9G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[00:08:29 rss=3.1G] row 100/691, forwards 400 (0.40s each)
-[00:11:08 rss=3.1G] row 200/691, forwards 800 (0.40s each)
-[00:13:47 rss=3.2G] row 300/691, forwards 1200 (0.40s each)
-[00:16:26 rss=3.2G] row 400/691, forwards 1600 (0.40s each)
-[00:19:06 rss=3.2G] row 500/691, forwards 2000 (0.40s each)
-[00:21:47 rss=3.2G] row 600/691, forwards 2400 (0.40s each)
-[free] RSS 3247 MiB -> 678 MiB (released 2569 MiB)
-[00:24:13 rss=0.7G] DISCONFIRMATION: 2026-09-07T00:24:13  T2b  T2b  threshold=CI95 (cluster by explanation) of mean (d_own − d_pos2), d = lp_orig − lp_corrupt after the AV's own claim prefix, near donor = same document other position, all 691 single-word rows ≤ 0 (activation-dependence test, not a truth test)  observed=mean d_own−d_pos2=7.3473 [6.5589,8.1413] n=691 n_expl=159; d_own 12.9881 d_pos2 5.6408 d_foreign 2.8794 d_noinj 2.7256; frac d>0 own 0.973 pos2 0.792 foreign 0.645 noinj 0.712; d_own−d_foreign 10.1087 [9.2084,10.9556]; LLM (n=298) own−pos2 6.1652 [5.2560,7.1314]; det (n=393) 8.2436 [7.1885,9.3605]; in_ctx=True (n=192) 11.6013 [9.6341,14.0105], in_ctx=False (n=499) 5.7105 [5.1074,6.2641]  NOT MET  MET would mean the preference for the original word does not depend on which activation of the same document is injected: self-consistency, not readout
-[00:24:13 rss=0.7G] T2b done: own−pos2 7.3473 [6.5589,8.1413] -> NOT MET; own−foreign 10.1087 [9.2084,10.9556]; frac d>0 own 0.973 pos2 0.792 foreign 0.645

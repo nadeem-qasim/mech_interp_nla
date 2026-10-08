@@ -2,7 +2,7 @@
 N_TAIL largest 27B detail deletion drops, shuffled. Writes the BLIND sheet and a separate KEY. Run from the repo root."""
 import csv, glob, json, random, pandas as pd
 
-BLIND, KEY, SEED, N_RANDOM, N_TAIL = "notes/claim_spotcheck_BLIND.md", "notes/claim_spotcheck_KEY.csv", 11, 3, 5
+BLIND, KEY, SEED, N_RANDOM, N_TAIL = "fve_claims/audit/out/claim_spotcheck_BLIND.md", "fve_claims/audit/out/claim_spotcheck_KEY.csv", 11, 3, 5
 P = {r["pilot_id"]: r for r in map(json.loads, open("data/redocred_pilot/pilot.jsonl"))}
 
 
@@ -44,6 +44,9 @@ for i, (kind, m, r) in enumerate(items, 1):
           f"**AV wrote:** \"{span}\"", "", f"**Claim:** {r.proposition}", "", "human_label: ", "note: ", ""]
     K.append({"item": iid, "sample": kind, "model": m, "pilot_id": r.pilot_id, "claim_id": r.claim_id, "subtype": r.subtype,
               "truth": r.truth, "fve_drop_pp": round(r.drop * 100, 3), "rationale": r.rationale})
+import os, sys
+if os.path.exists(BLIND) and "--force" not in sys.argv:
+    sys.exit(f"{BLIND} exists and holds hand-entered labels; pass --force to overwrite it.")
 open(BLIND, "w").write("\n".join(B))
 with open(KEY, "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(K[0])); w.writeheader(); w.writerows(K)

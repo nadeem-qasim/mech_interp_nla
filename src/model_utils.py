@@ -123,7 +123,7 @@ def to_cpu_f32(t: "torch.Tensor") -> "torch.Tensor":
 
     `contiguous()` does not help (the view is already contiguous, merely offset);
     `clone()` does, but casting first is cheaper and clearer.  fp32 sources are
-    unaffected.  scripts/smoke_test.py asserts this workaround is still required.
+    unaffected.
     """
     return t.detach().float().cpu()
 

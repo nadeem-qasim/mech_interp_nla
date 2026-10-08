@@ -1,8 +1,6 @@
 # fve_claims — atomic claim annotation and deletion FVE
 
-Current protocol: **atomic-v1**. Source activations and AV explanations are unchanged.
-The earlier sentence labels, tasks, and any sentence scores are legacy artifacts and cannot
-be reused as atomic annotations. Atomic outputs use separate filenames.
+Current protocol: **atomic-v1**.
 
 ## Annotation
 Read [ANNOTATION_GUIDE.md](ANNOTATION_GUIDE.md). One record describes one independently
@@ -19,21 +17,20 @@ python3 fve_claims/02_claims.py --batch 3 --start 75 --end 100
 python3 fve_claims/02_claims.py --labels fve_claims/tasks/02_atoms_7b_batch*.jsonl
 ```
 
-Task files: `tasks/02_atomic_tasks_7b_batchN.json`. Merged annotations: `legacy/02_atoms_7b.jsonl`.
+Task files: `tasks/02_atomic_tasks_7b_batchN.json`. Merged annotations: `out/02_atoms_7b.jsonl`.
 
 **Note.** The per-document files `tasks/02_atoms_{7b,27b}_doc*.jsonl` and `tasks/04_rewrites_*_doc*.jsonl` are the labels and
-edits the reported results use. Everything in `legacy/` is from the earlier sentence-level protocol and is kept only for provenance.
+edits the reported results use.
 `--output` overrides either destination. The merger validates IDs, labels, exact source
 spans, evidence, and rationale format and reports documents without annotations.
 Annotators must check semantic atomicity, equivalence, complete occurrence coverage, and
 truth; code cannot establish these from offsets. All labels remain provisional for review.
-The old `02b_entity_check.py` is only a legacy sentence-level diagnostic, not evidence or a labeler.
 
-## Later deletion scoring
-Provenance is not a deletion instruction. Prepare `legacy/04_deletions_7b.jsonl` as described in
-the guide, with an explicit edited explanation and a recorded review that it removes all
-occurrences of the atom while preserving every other proposition. The scorer rejects
-unreviewed, unchanged, empty, or stale counterfactuals before loading the model.
+## Deletion scoring
+`gen_deletions.py` (7B) and `gen_deletions_27b.py` remove each claim's exact `av_spans` from the
+explanation (string operation, no LLM) and write `tasks/04_rewrites_{7b,27b}_doc*.jsonl`. A claim
+whose spans overlap another claim's is flagged and not scored. The scorer rejects unchanged, empty,
+or stale counterfactuals before loading the model.
 
 ```sh
 python3 fve_claims/04_score.py
@@ -42,8 +39,8 @@ python3 fve_claims/05_analyze.py
 python3 fve_claims/05_analyze.py --labels path/to/reviewed_atoms.jsonl --split eval
 ```
 
-Outputs: `legacy/04_atomic_scores_7b.csv`, `legacy/04_atomic_expl_7b.csv`, `legacy/04_atomic_settings.json`,
-`05_atomic_summary_<split>.md`, and `fig/fve_drop_atomic_7b_<split>.png`.
+Outputs: `04_scores_7b_b*.csv` and `04_expl_7b_b*.csv` (one pair per document range), `05_summary_*.md`,
+and figures under `fig/` (regenerated on each run).
 Analysis joins on document and claim IDs, rejects unmatched scores and duplicate keys,
 and reports all four types × all three truth labels, with document-cluster bootstrap CIs
 (1000 draws, seed 0). Means weight claims equally. Relatedness is not collected in this
@@ -55,11 +52,11 @@ released 7B value 0.7335 and local variance of sqrt(d)-normalized pilot activati
 Changing D rescales drops and CI endpoints. It does not change ranks.
 
 The 100 Re-DocRED prefixes, dev IDs 0–19 / eval IDs 20–99, and original 7B generation setup
-remain documented in `data/redocred_pilot/README.md` and the historical
-`notes/fve_claims_baseline_protocol.md`. Scripts 00/01 produce the activations and greedy AV
-explanations. The model classes still come from `overnight/nla_lib.py`.
-The 27B run and paraphrase experiments remain future work. Legacy sentence paraphrase
-entry points (03/04b) are disabled pending a separate atomic paraphrase protocol.
+are documented in `data/redocred_pilot/README.md`. Scripts 00/01 produce the activations and greedy AV
+explanations; the 7B model classes come from `src/nla_lib.py`. The 27B pipeline (`common_27b.py` and the
+`*27b*` scripts) ran on a rented GPU; `04_06_score_27b_full.py` scores all 100 documents, deletions and
+heavy paraphrases. 7B paraphrase scoring is `06_score_paraphrase.py`. `07_tag_final_sentence.py` adds the
+per-claim `final_sentence` tag.
 
 ## Tests
 ```sh

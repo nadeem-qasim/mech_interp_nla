@@ -1,65 +1,0 @@
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:  30%|███       | 76/253 [00:00<00:00, 645.77it/s]Loading weights:  56%|█████▌    | 141/253 [00:00<00:00, 326.00it/s]Loading weights:  72%|███████▏  | 182/253 [00:00<00:00, 152.84it/s]Loading weights:  82%|████████▏ | 208/253 [00:02<00:00, 58.09it/s] Loading weights: 100%|██████████| 253/253 [00:02<00:00, 108.75it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:55:09 rss=1.3G] AR loaded: 21 layers, mse_scale=59.867
-[02:55:16 rss=1.3G] K1 original cache check: max |dev| 1.11e-16 -> reuse s2 cos_z = True
-[02:56:51 rss=1.4G] K1: 50/393 rows, 0.27 s/forward
-[02:58:26 rss=1.4G] K1: 100/393 rows, 0.27 s/forward
-[03:00:01 rss=1.4G] K1: 150/393 rows, 0.27 s/forward
-[03:01:36 rss=1.4G] K1: 200/393 rows, 0.27 s/forward
-[03:03:11 rss=1.4G] K1: 250/393 rows, 0.27 s/forward
-[03:04:46 rss=1.4G] K1: 300/393 rows, 0.27 s/forward
-[03:06:21 rss=1.4G] K1: 350/393 rows, 0.27 s/forward
-[free] RSS 1401 MiB -> 668 MiB (released 733 MiB)
-Traceback (most recent call last):
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/k1_kway.py", line 232, in <module>
-    main()
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/k1_kway.py", line 155, in main
-    ok[c] = ok[c].astype(float)
-            ^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/generic.py", line 6529, in astype
-    new_data = self._mgr.astype(dtype=dtype, errors=errors)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 627, in astype
-    return self.apply("astype", dtype=dtype, errors=errors)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 445, in apply
-    applied = getattr(b, f)(**kwargs)
-              ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/internals/blocks.py", line 607, in astype
-    new_values = astype_array_safe(values, dtype, errors=errors)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/dtypes/astype.py", line 240, in astype_array_safe
-    new_values = astype_array(values, dtype, copy=copy)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/dtypes/astype.py", line 182, in astype_array
-    values = values.astype(dtype, copy=copy)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/arrays/string_arrow.py", line 336, in astype
-    return self.to_numpy(dtype=dtype, na_value=np.nan)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 1746, in to_numpy
-    result = result.astype(dtype, copy=False)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: could not convert string to float: ''
-EXIT 1
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   1%|          | 2/253 [00:00<00:25,  9.70it/s]Loading weights:  16%|█▌        | 40/253 [00:00<00:02, 93.60it/s]Loading weights:  24%|██▎       | 60/253 [00:00<00:01, 119.67it/s]Loading weights:  34%|███▍      | 87/253 [00:00<00:01, 156.54it/s]Loading weights:  42%|████▏     | 106/253 [00:00<00:01, 110.62it/s]Loading weights:  48%|████▊     | 121/253 [00:01<00:01, 102.07it/s]Loading weights:  53%|█████▎    | 134/253 [00:01<00:01, 106.82it/s]Loading weights:  58%|█████▊    | 147/253 [00:01<00:00, 108.13it/s]Loading weights:  63%|██████▎   | 159/253 [00:01<00:01, 57.77it/s] Loading weights:  66%|██████▋   | 168/253 [00:02<00:02, 41.68it/s]Loading weights:  69%|██████▉   | 175/253 [00:02<00:02, 38.63it/s]Loading weights:  78%|███████▊  | 197/253 [00:02<00:01, 49.14it/s]Loading weights:  84%|████████▍ | 213/253 [00:02<00:00, 62.18it/s]Loading weights: 100%|██████████| 253/253 [00:02<00:00, 85.11it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[03:08:51 rss=2.0G] AR loaded: 21 layers, mse_scale=59.867
-[03:08:51 rss=2.0G] K1 rows.csv rebuilt from saved scores: 393 rows
-[free] RSS 2054 MiB -> 564 MiB (released 1490 MiB)
-[03:08:52 rss=0.6G] DISCONFIRMATION: 2026-09-09T03:08:52  K1  K1  threshold=CI95 (cluster by explanation) of (top-1 rate − 0.125) on non-last in_full_prefix rows (n=107) ≤ 0 → MET; > 0 → NOT MET; straddles or < 80 rows completed → INCONCLUSIVE  observed=nonlast_in_prefix: n=107 top1−0.125 0.1834 [0.0962,0.2650] n=107 k=89 (top1 0.308) MRR 0.487 gap 0.00125 [0.00058,0.00202] n=107 k=89 frac gap>0 0.654; nonlast_not_in_prefix: n=159 top1−0.125 0.1266 [0.0613,0.1895] n=159 k=115 (top1 0.252) MRR 0.443 gap 0.00044 [0.00000,0.00086] n=159 k=115 frac gap>0 0.535; positive_control_last: n=127 top1−0.125 0.3238 [0.2372,0.4104] n=127 k=127 (top1 0.449) MRR 0.587 gap 0.01080 [0.00729,0.01461] n=127 k=127 frac gap>0 0.732; rows completed 393/393 (errors 0); original cache reused True  NOT MET  preference for the AV's original word among 8 one-word variants; not a truth label; in_full_prefix is a string proxy
-[03:08:52 rss=0.6G] K1 done: NOT MET; 393 rows; 12.8 min

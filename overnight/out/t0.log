@@ -1,29 +1,0 @@
-[19:49:34 rss=0.4G] artifact counts OK: {'stimuli': 200, 'explanations': 200, 'claims': 671, 's3_edits': 538, 's3_edit_ok': 490, 'acts_L20.npz': {'h20': [200, 3584], 'h19': [200, 3584], 'h21': [200, 3584], 'h20_pos2': [200, 3584], 'stim_idx': [200], 'doc_idx': [200], 'pos': [200], 'pos2': [200]}, 'recon_L20.npz': {'pred': [200, 3584], 'pred_empty': [3584], 'stim_idx': [200]}}
-[19:49:36 rss=0.5G] t0_topics.csv written: 200 rows; 199 unique topics
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   6%|▋         | 22/339 [00:00<00:02, 133.37it/s]Loading weights:  11%|█         | 36/339 [00:00<00:05, 57.55it/s] Loading weights:  13%|█▎        | 44/339 [00:01<00:10, 27.26it/s]Loading weights:  22%|██▏       | 75/339 [00:01<00:04, 56.14it/s]Loading weights:  25%|██▌       | 85/339 [00:01<00:06, 37.88it/s]Loading weights:  27%|██▋       | 92/339 [00:02<00:07, 32.66it/s]Loading weights:  38%|███▊      | 128/339 [00:02<00:03, 55.21it/s]Loading weights:  40%|████      | 136/339 [00:02<00:03, 57.50it/s]Loading weights:  42%|████▏     | 144/339 [00:03<00:04, 45.37it/s]Loading weights:  44%|████▍     | 150/339 [00:03<00:07, 24.67it/s]Loading weights:  46%|████▌     | 155/339 [00:04<00:07, 25.38it/s]Loading weights:  47%|████▋     | 159/339 [00:04<00:09, 19.29it/s]Loading weights:  48%|████▊     | 162/339 [00:04<00:11, 15.67it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 67.92it/s]
-[19:49:42 rss=0.8G] TARGET loaded
-[19:49:45 rss=0.3G] entropy 0/200 pos=437 ent=2.260 top1=' near'
-[19:50:42 rss=0.4G] entropy 50/200 pos=214 ent=0.001 top1=' of'
-[19:51:38 rss=0.4G] entropy 100/200 pos=254 ent=0.221 top1=' a'
-[19:52:35 rss=0.4G] entropy 150/200 pos=70 ent=2.171 top1=' until'
-[free] RSS 382 MiB -> 591 MiB (released -209 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   4%|▎         | 12/339 [00:00<00:03, 85.85it/s]Loading weights:   6%|▌         | 21/339 [00:00<00:03, 84.23it/s]Loading weights:  17%|█▋        | 58/339 [00:00<00:02, 139.79it/s]Loading weights:  21%|██        | 71/339 [00:00<00:02, 133.01it/s]Loading weights:  25%|██▍       | 84/339 [00:00<00:02, 104.36it/s]Loading weights:  28%|██▊       | 95/339 [00:01<00:03, 77.01it/s] Loading weights:  31%|███       | 104/339 [00:01<00:03, 71.77it/s]Loading weights:  42%|████▏     | 144/339 [00:02<00:05, 38.00it/s]Loading weights:  46%|████▌     | 156/339 [00:02<00:04, 38.34it/s]Loading weights:  48%|████▊     | 162/339 [00:03<00:04, 37.11it/s]Loading weights:  50%|█████     | 171/339 [00:03<00:03, 42.42it/s]Loading weights:  58%|█████▊    | 195/339 [00:03<00:02, 57.91it/s]Loading weights:  69%|██████▊   | 233/339 [00:03<00:01, 84.73it/s]Loading weights:  75%|███████▌  | 255/339 [00:03<00:00, 91.60it/s]Loading weights:  78%|███████▊  | 266/339 [00:03<00:00, 93.84it/s]Loading weights:  83%|████████▎ | 280/339 [00:04<00:00, 69.72it/s]Loading weights:  85%|████████▌ | 289/339 [00:04<00:00, 69.14it/s]Loading weights:  90%|████████▉ | 304/339 [00:04<00:00, 71.71it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 71.99it/s]
-[19:53:41 rss=0.7G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[19:53:53 rss=0.3G] AV timing stim 0: 12.1s 145 tok parse_ok=True same_as_round1=True
-[19:54:03 rss=0.3G] AV timing stim 1: 9.7s 143 tok parse_ok=True same_as_round1=True
-[19:54:12 rss=0.3G] AV timing stim 2: 9.9s 146 tok parse_ok=True same_as_round1=True
-[free] RSS 351 MiB -> 566 MiB (released -215 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:  21%|██        | 52/253 [00:00<00:00, 210.74it/s]Loading weights:  29%|██▉       | 74/253 [00:00<00:01, 155.05it/s]Loading weights:  36%|███▌      | 90/253 [00:01<00:02, 66.59it/s] Loading weights:  68%|██████▊   | 171/253 [00:01<00:00, 133.79it/s]Loading weights:  74%|███████▍  | 188/253 [00:01<00:00, 113.16it/s]Loading weights: 100%|██████████| 253/253 [00:01<00:00, 150.06it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[19:54:20 rss=1.9G] AR loaded: 21 layers, mse_scale=59.867
-[free] RSS 1953 MiB -> 672 MiB (released 1282 MiB)
-[19:54:24 rss=0.6G] T0 done

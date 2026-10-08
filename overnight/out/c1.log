@@ -1,19 +1,0 @@
-[19:56:22 rss=0.4G] eval explanations with >= 3 claims: 160
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   4%|▎         | 9/253 [00:00<00:06, 38.75it/s]Loading weights: 100%|██████████| 253/253 [00:00<00:00, 1073.95it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[19:56:24 rss=5.3G] AR loaded: 21 layers, mse_scale=59.867
-[19:57:09 rss=5.4G] 40/160 forwards 200 (0.22s each)
-[19:57:52 rss=5.4G] 80/160 forwards 400 (0.22s each)
-[19:58:35 rss=5.4G] 120/160 forwards 600 (0.22s each)
-[19:59:18 rss=5.4G] 160/160 forwards 800 (0.22s each)
-[free] RSS 5513 MiB -> 794 MiB (released 4719 MiB)
-[19:59:18 rss=0.8G] DISCONFIRMATION: 2026-09-06T19:59:18  C1  C1  threshold=paired CI95 of [snippet deletion cost in z_rot − in z] ≤ −0.05  observed=mean diff=-0.02642 CI95=[-0.03215,-0.02126] n=160; cost in z (S2)=0.1253; cost in z_rot=0.0989; n_expl=160  NOT MET  MET would mean the final snippet loses most of its weight when moved to the front: dominance is positional, not content
-[19:59:18 rss=0.8G] DISCONFIRMATION: 2026-09-06T19:59:18  C1  C1-joined  threshold=same statistic with cost in z computed from the space-joined z (secondary, not a pre-registered kill)  observed=mean diff=-0.02553 CI95=[-0.03130,-0.02032] n=160; cost in z_joined=0.1244; n_expl=160  NOT MET  joined-text baseline removes the newline/space formatting difference between z and z_rot
-[19:59:18 rss=0.8G] C1 done: diff=-0.02642 [-0.03215,-0.02126] -> NOT MET

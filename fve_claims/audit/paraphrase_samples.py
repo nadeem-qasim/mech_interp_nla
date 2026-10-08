@@ -3,7 +3,7 @@ explanation that changed under the heavy rewrite (before and after). Scores and 
 import difflib, glob, json, random
 import pandas as pd
 
-OUT, SEED, N = "notes/paraphrase_samples.md", 7, 5
+OUT, SEED, N = "fve_claims/audit/out/paraphrase_samples.md", 7, 5
 
 
 def truth(patterns):
@@ -42,5 +42,8 @@ for m, (label_pats, score_files, rewrite_pat) in MODELS.items():
         i += 1; r = rw[k]; before, after = changed(r["original_explanation"], r["heavy_text"])
         L += [f"## {i}. {m} · document {k[0]} · claim {k[1]}", "", f"**Claim:** {r['proposition']}", "",
               f"**Before:** …{before}…", "", f"**After heavy paraphrase:** …{after}…", "", "check: ", ""]
+import os, sys
+if os.path.exists(OUT) and "--force" not in sys.argv:
+    sys.exit(f"{OUT} exists and holds hand-entered labels; pass --force to overwrite it.")
 open(OUT, "w").write("\n".join(L))
 print(f"wrote {OUT}: {i} samples")

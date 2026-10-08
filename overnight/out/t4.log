@@ -1,62 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   6%|▌         | 20/339 [00:00<00:06, 50.67it/s]Loading weights:   8%|▊         | 26/339 [00:00<00:07, 41.88it/s]Loading weights:   9%|▉         | 30/339 [00:00<00:08, 36.67it/s]Loading weights:  10%|█         | 34/339 [00:00<00:08, 34.58it/s]Loading weights:  12%|█▏        | 42/339 [00:01<00:10, 27.50it/s]Loading weights:  15%|█▌        | 51/339 [00:01<00:11, 24.85it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 199.46it/s]
-[21:02:02 rss=1.9G] TARGET loaded
-[free] RSS 2060 MiB -> 536 MiB (released 1523 MiB)
-[21:02:15 rss=0.5G] directions: {'sports': {'norm': 25.684385299682617, 'mean_norm_class_a': 112.16047668457031, 'cos_with_mean_h20': 0.012456488725713824}, 'french': {'norm': 40.358131408691406, 'mean_norm_class_a': 120.14505004882812, 'cos_with_mean_h20': -0.017968409819203505}, 'cos_sports_french': 0.0068275086423837325}
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:44,  7.59it/s]Loading weights:   1%|          | 2/339 [00:00<00:58,  5.73it/s]Loading weights:   1%|          | 3/339 [00:00<00:58,  5.72it/s]Loading weights:   2%|▏         | 8/339 [00:00<00:33, 10.02it/s]Loading weights:   3%|▎         | 9/339 [00:01<00:36,  9.03it/s]Loading weights:   3%|▎         | 10/339 [00:01<00:50,  6.55it/s]Loading weights:   3%|▎         | 11/339 [00:01<00:54,  6.04it/s]Loading weights:  13%|█▎        | 44/339 [00:01<00:05, 56.82it/s]Loading weights:  31%|███       | 104/339 [00:01<00:01, 155.18it/s]Loading weights:  38%|███▊      | 129/339 [00:02<00:01, 126.23it/s]Loading weights:  44%|████▍     | 149/339 [00:03<00:04, 43.21it/s] Loading weights:  48%|████▊     | 164/339 [00:03<00:03, 49.95it/s]Loading weights:  53%|█████▎    | 178/339 [00:03<00:02, 53.71it/s]Loading weights:  56%|█████▌    | 190/339 [00:04<00:03, 38.61it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 76.80it/s]
-[21:02:20 rss=1.7G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   4%|▍         | 11/253 [00:00<00:07, 32.85it/s]Loading weights:   6%|▌         | 15/253 [00:00<00:07, 33.04it/s]Loading weights:   8%|▊         | 19/253 [00:00<00:06, 34.93it/s]Loading weights:  15%|█▍        | 37/253 [00:00<00:03, 70.30it/s]Loading weights:  18%|█▊        | 45/253 [00:01<00:05, 39.18it/s]Loading weights:  20%|██        | 51/253 [00:01<00:05, 40.14it/s]Loading weights:  23%|██▎       | 57/253 [00:01<00:04, 43.00it/s]Loading weights:  25%|██▍       | 63/253 [00:01<00:04, 45.26it/s]Loading weights:  27%|██▋       | 69/253 [00:02<00:08, 21.83it/s]Loading weights:  29%|██▉       | 73/253 [00:02<00:07, 22.76it/s]Loading weights:  34%|███▍      | 86/253 [00:02<00:05, 31.50it/s]Loading weights:  36%|███▌      | 91/253 [00:02<00:06, 24.27it/s]Loading weights: 100%|██████████| 253/253 [00:02<00:00, 87.15it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[21:02:24 rss=0.3G] AR loaded: 21 layers, mse_scale=59.867
-[21:03:58 rss=0.3G] stim 1/40 done, 9 items, 10.4 s/item
-[21:05:28 rss=0.3G] stim 2/40 done, 18 items, 10.2 s/item
-[21:06:58 rss=0.3G] stim 3/40 done, 27 items, 10.2 s/item
-[21:08:28 rss=0.3G] stim 4/40 done, 36 items, 10.1 s/item
-[21:09:58 rss=0.3G] stim 5/40 done, 45 items, 10.1 s/item
-[21:11:29 rss=0.3G] stim 6/40 done, 54 items, 10.1 s/item
-[21:12:58 rss=0.3G] stim 7/40 done, 63 items, 10.1 s/item
-[21:14:29 rss=0.3G] stim 8/40 done, 72 items, 10.1 s/item
-[21:15:59 rss=0.4G] stim 9/40 done, 81 items, 10.1 s/item
-[21:17:29 rss=0.4G] stim 10/40 done, 90 items, 10.1 s/item
-[21:19:01 rss=0.3G] stim 11/40 done, 99 items, 10.1 s/item
-[21:20:33 rss=0.3G] stim 12/40 done, 108 items, 10.1 s/item
-[21:22:03 rss=0.3G] stim 13/40 done, 117 items, 10.1 s/item
-[21:23:33 rss=0.3G] stim 14/40 done, 126 items, 10.1 s/item
-[21:25:04 rss=0.3G] stim 15/40 done, 135 items, 10.1 s/item
-[21:26:34 rss=0.3G] stim 16/40 done, 144 items, 10.1 s/item
-[21:28:04 rss=0.3G] stim 17/40 done, 153 items, 10.1 s/item
-[21:29:34 rss=0.3G] stim 18/40 done, 162 items, 10.1 s/item
-[21:31:03 rss=0.3G] stim 19/40 done, 171 items, 10.1 s/item
-[21:32:34 rss=0.3G] stim 20/40 done, 180 items, 10.1 s/item
-[21:34:05 rss=0.3G] stim 21/40 done, 189 items, 10.1 s/item
-[21:35:36 rss=0.3G] stim 22/40 done, 198 items, 10.1 s/item
-[21:37:06 rss=0.3G] stim 23/40 done, 207 items, 10.1 s/item
-[21:38:37 rss=0.3G] stim 24/40 done, 216 items, 10.1 s/item
-[21:40:09 rss=0.3G] stim 25/40 done, 225 items, 10.1 s/item
-[21:41:39 rss=0.3G] stim 26/40 done, 234 items, 10.1 s/item
-[21:43:08 rss=0.3G] stim 27/40 done, 243 items, 10.1 s/item
-[21:44:38 rss=0.3G] stim 28/40 done, 252 items, 10.1 s/item
-[21:46:08 rss=0.3G] stim 29/40 done, 261 items, 10.1 s/item
-[21:47:36 rss=0.3G] stim 30/40 done, 270 items, 10.0 s/item
-[21:49:05 rss=0.3G] stim 31/40 done, 279 items, 10.0 s/item
-[21:50:36 rss=0.3G] stim 32/40 done, 288 items, 10.0 s/item
-[21:52:07 rss=0.3G] stim 33/40 done, 297 items, 10.0 s/item
-[21:53:38 rss=0.3G] stim 34/40 done, 306 items, 10.0 s/item
-[21:55:08 rss=0.3G] stim 35/40 done, 315 items, 10.0 s/item
-[21:56:39 rss=0.3G] stim 36/40 done, 324 items, 10.0 s/item
-[21:58:09 rss=0.3G] stim 37/40 done, 333 items, 10.0 s/item
-[21:59:40 rss=0.3G] stim 38/40 done, 342 items, 10.0 s/item
-[22:01:12 rss=0.3G] stim 39/40 done, 351 items, 10.0 s/item
-[22:02:42 rss=0.3G] stim 40/40 done, 360 items, 10.0 s/item
-[free] RSS 274 MiB -> 523 MiB (released -249 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[free] RSS 523 MiB -> 524 MiB (released -0 MiB)
-[free] WARNING: RSS did not drop meaningfully; restart the kernel before loading anything else.
-[22:02:42 rss=0.5G] DISCONFIRMATION: 2026-09-06T22:02:42  T4  T4  threshold=sports mention rate < 0.25 at both positive β (pilot, CI by stimulus)  observed=β=0.25: 1.000 [1.000,1.000] n=40 (above); β=0.5: 1.000 [1.000,1.000] n=40 (above); baseline unperturbed 0.125; random β=0.5 0.175  NOT MET  MET would mean a large injected concept direction does not surface in the description (readout not direction-additive)
-[22:02:42 rss=0.5G] T4 done: NOT MET; β=0.25 1.000; β=0.5 1.000

@@ -2,12 +2,12 @@
 import csv, re
 
 labels, cur = {}, None
-for line in open("notes/claim_spotcheck_BLIND.md"):
+for line in open("fve_claims/audit/out/claim_spotcheck_BLIND.md"):
     if m := re.match(r"^## \d+\. (S\d+)", line):
         cur = m.group(1)
     if (m := re.match(r"^\s*human_label:\s*[*_`\s]*(\w+)", line)) and cur:  # tolerate **bold**, _italic_, `code`
         labels[cur] = m.group(1).lower()
-rows = list(csv.DictReader(open("notes/claim_spotcheck_KEY.csv")))
+rows = list(csv.DictReader(open("fve_claims/audit/out/claim_spotcheck_KEY.csv")))
 print(f"labels parsed: {len(labels)} of {len(rows)} items")
 key = [k for k in rows if k["item"] in labels]
 for name, g in [("random 27B", [k for k in key if k["sample"] == "random" and k["model"] == "27B"]),

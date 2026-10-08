@@ -16,3 +16,6 @@ artifacts/
 hf_cache/
 .huggingface/
 .DS_Store
+.pytest_cache/
+data/redocred_raw/
+!fve_claims/out/acts_7b.npz

@@ -1,20 +1,0 @@
-[00:42:28 rss=0.4G] artifact checks: 27/27 OK
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   5%|▌         | 17/339 [00:00<00:05, 64.04it/s]Loading weights:   7%|▋         | 24/339 [00:00<00:07, 41.49it/s]Loading weights:  13%|█▎        | 43/339 [00:00<00:04, 70.99it/s]Loading weights:  15%|█▌        | 52/339 [00:01<00:09, 29.44it/s]Loading weights:  17%|█▋        | 58/339 [00:01<00:12, 21.91it/s]Loading weights:  26%|██▌       | 87/339 [00:02<00:06, 40.65it/s]Loading weights:  30%|███       | 103/339 [00:02<00:05, 44.78it/s]Loading weights:  32%|███▏      | 109/339 [00:02<00:05, 43.30it/s]Loading weights:  41%|████▏     | 140/339 [00:02<00:02, 71.91it/s]Loading weights:  44%|████▍     | 150/339 [00:03<00:03, 54.03it/s]Loading weights:  47%|████▋     | 158/339 [00:03<00:04, 41.55it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 93.06it/s]
-[00:42:36 rss=2.3G] TARGET loaded
-[free] RSS 2480 MiB -> 574 MiB (released 1906 MiB)
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   6%|▌         | 19/339 [00:00<00:03, 81.36it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:05, 60.62it/s]Loading weights:  10%|█         | 34/339 [00:00<00:06, 46.87it/s]Loading weights:  12%|█▏        | 39/339 [00:00<00:07, 40.60it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:05, 55.81it/s]Loading weights:  17%|█▋        | 58/339 [00:01<00:05, 50.51it/s]Loading weights:  19%|█▉        | 64/339 [00:01<00:06, 44.72it/s]Loading weights:  20%|██        | 69/339 [00:02<00:18, 14.40it/s]Loading weights:  22%|██▏       | 73/339 [00:02<00:17, 15.52it/s]Loading weights:  22%|██▏       | 76/339 [00:02<00:16, 15.73it/s]Loading weights:  25%|██▌       | 86/339 [00:03<00:11, 21.86it/s]Loading weights:  37%|███▋      | 124/339 [00:03<00:04, 45.59it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 96.80it/s]
-[00:42:49 rss=2.4G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[free] RSS 2478 MiB -> 585 MiB (released 1893 MiB)
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   6%|▋         | 16/253 [00:00<00:04, 51.78it/s]Loading weights:  17%|█▋        | 43/253 [00:00<00:02, 71.17it/s]Loading weights:  21%|██        | 53/253 [00:00<00:03, 63.88it/s]Loading weights:  24%|██▎       | 60/253 [00:01<00:03, 53.89it/s]Loading weights:  26%|██▌       | 66/253 [00:01<00:04, 44.62it/s]Loading weights:  28%|██▊       | 71/253 [00:01<00:03, 45.52it/s]Loading weights:  46%|████▌     | 116/253 [00:01<00:01, 99.49it/s]Loading weights:  50%|████▉     | 126/253 [00:01<00:01, 83.47it/s]Loading weights:  53%|█████▎    | 134/253 [00:02<00:03, 36.02it/s]Loading weights: 100%|██████████| 253/253 [00:02<00:00, 96.48it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[00:43:46 rss=0.8G] AR loaded: 21 layers, mse_scale=59.867
-[free] RSS 871 MiB -> 632 MiB (released 239 MiB)
-[00:43:48 rss=0.6G] U0c done: costs {"target_short_forward": 0.422, "target_doc512_forward_all_hidden": 1.123, "target_forward_hook_block20": 0.099, "av_forward_prefill": 0.597, "av_generation_200": 9.789, "ar_score": 0.48}; total projected 199 min
-exit=0

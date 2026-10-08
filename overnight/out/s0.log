@@ -1,57 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   3%|▎         | 9/339 [00:00<00:05, 60.30it/s]Loading weights: 100%|██████████| 339/339 [00:00<00:00, 1414.50it/s]
-[02:20:32 rss=5.0G] TARGET loaded
-[02:20:35 rss=5.2G] stimuli: 629 docs, 610 eligible, chose 200; 3s
-[02:20:37 rss=3.9G] acts 0/200 seq_len=512 pos=437 norm20=126.2
-[02:21:33 rss=3.9G] acts 50/200 seq_len=512 pos=214 norm20=118.3
-[02:22:29 rss=3.9G] acts 100/200 seq_len=512 pos=254 norm20=129.6
-[02:23:25 rss=3.9G] acts 150/200 seq_len=512 pos=70 norm20=127.7
-[02:24:20 rss=3.9G] acts cached in 225s
-[free] RSS 3972 MiB -> 707 MiB (released 3264 MiB)
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 4/339 [00:00<00:17, 19.53it/s]Loading weights:   2%|▏         | 7/339 [00:00<00:19, 17.02it/s]Loading weights:  14%|█▍        | 48/339 [00:00<00:03, 86.33it/s]Loading weights:  24%|██▍       | 82/339 [00:01<00:02, 92.75it/s]Loading weights:  27%|██▋       | 91/339 [00:01<00:03, 77.75it/s]Loading weights:  34%|███▎      | 114/339 [00:01<00:03, 61.56it/s]Loading weights:  36%|███▌      | 121/339 [00:01<00:03, 62.21it/s]Loading weights:  38%|███▊      | 128/339 [00:03<00:10, 20.39it/s]Loading weights:  39%|███▉      | 133/339 [00:03<00:09, 22.15it/s]Loading weights:  41%|████      | 139/339 [00:03<00:08, 24.72it/s]Loading weights:  42%|████▏     | 144/339 [00:03<00:07, 25.95it/s]Loading weights:  44%|████▍     | 149/339 [00:03<00:07, 25.94it/s]Loading weights:  45%|████▌     | 153/339 [00:04<00:06, 27.15it/s]Loading weights:  54%|█████▍    | 183/339 [00:04<00:02, 70.97it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 81.36it/s]
-[02:24:26 rss=5.0G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[02:24:36 rss=5.0G] AV 0 'fall' n_tok=145 10.6s parse_ok=True cjk=False
-[02:24:46 rss=5.0G] AV 1 ' of' n_tok=143 9.7s parse_ok=True cjk=False
-[02:24:56 rss=5.0G] AV 2 'ym' n_tok=146 9.9s parse_ok=True cjk=False
-[02:25:06 rss=5.0G] AV 3 'ats' n_tok=145 9.8s parse_ok=True cjk=False
-[02:25:15 rss=5.0G] AV 4 ' plot' n_tok=140 9.5s parse_ok=True cjk=False
-[02:25:25 rss=5.0G] AV 5 ' Up' n_tok=144 9.7s parse_ok=True cjk=False
-[02:25:35 rss=5.0G] AV 6 ' Atlantic' n_tok=143 9.9s parse_ok=True cjk=False
-[02:25:45 rss=5.0G] AV 7 ' practices' n_tok=147 10.3s parse_ok=True cjk=False
-[02:25:55 rss=5.0G] AV 8 ' those' n_tok=145 10.2s parse_ok=True cjk=False
-[02:26:05 rss=5.0G] AV 9 ' ,' n_tok=140 9.9s parse_ok=True cjk=False
-[02:26:15 rss=5.0G] AV 10 'on' n_tok=142 10.0s parse_ok=True cjk=False
-[02:26:26 rss=5.0G] AV 11 ' and' n_tok=144 10.1s parse_ok=True cjk=False
-[02:26:36 rss=5.0G] AV 12 ' and' n_tok=143 10.1s parse_ok=True cjk=False
-[02:26:46 rss=5.0G] AV 13 '1' n_tok=145 10.3s parse_ok=True cjk=True
-[02:26:56 rss=5.0G] AV 14 ' the' n_tok=146 10.1s parse_ok=True cjk=False
-[02:27:06 rss=5.0G] AV 15 ' way' n_tok=148 10.2s parse_ok=True cjk=False
-[02:27:06 rss=5.0G] DISCONFIRMATION: 2026-09-06T02:27:06  S0  K0  threshold=cjk_rate>0.25  observed=cjk_rate=0.062 (1/16), parse_ok=1.000  NOT MET  injection on raw-text activations: MET would mean the AV is describing the marker glyph
-[free] RSS 5103 MiB -> 621 MiB (released 4481 MiB)
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   7%|▋         | 17/253 [00:00<00:03, 70.27it/s]Loading weights:  10%|▉         | 25/253 [00:00<00:03, 67.58it/s]Loading weights:  13%|█▎        | 32/253 [00:00<00:04, 51.38it/s]Loading weights:  15%|█▌        | 38/253 [00:00<00:05, 37.08it/s]Loading weights:  17%|█▋        | 43/253 [00:01<00:07, 27.73it/s]Loading weights:  19%|█▊        | 47/253 [00:01<00:07, 27.61it/s]Loading weights:  20%|██        | 51/253 [00:01<00:08, 24.54it/s]Loading weights:  33%|███▎      | 83/253 [00:01<00:02, 61.87it/s]Loading weights: 100%|██████████| 253/253 [00:01<00:00, 144.08it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-model.norm.weight | MISSING | 
-lm_head.weight    | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:27:10 rss=1.3G] AR loaded: 21 layers, mse_scale=59.867
-[02:27:11 rss=1.3G] AR 0 cos=0.904
-[02:27:12 rss=1.3G] AR 1 cos=0.820
-[02:27:12 rss=1.3G] AR 2 cos=0.955
-[02:27:12 rss=1.3G] AR 3 cos=0.874
-[02:27:13 rss=1.3G] AR 4 cos=0.939
-[02:27:13 rss=1.3G] AR 5 cos=0.907
-[02:27:13 rss=1.3G] AR 6 cos=0.809
-[02:27:13 rss=1.3G] AR 7 cos=0.880
-[02:27:14 rss=1.3G] AR 8 cos=0.915
-[02:27:14 rss=1.3G] AR 9 cos=0.785
-[02:27:14 rss=1.3G] AR 10 cos=0.858
-[02:27:15 rss=1.3G] AR 11 cos=0.894
-[02:27:15 rss=1.3G] AR 12 cos=0.940
-[02:27:15 rss=1.3G] AR 13 cos=0.922
-[02:27:15 rss=1.3G] AR 14 cos=0.935
-[02:27:16 rss=1.3G] AR 15 cos=0.898
-[free] RSS 1326 MiB -> 653 MiB (released 673 MiB)
-[02:27:16 rss=0.6G] S0 done

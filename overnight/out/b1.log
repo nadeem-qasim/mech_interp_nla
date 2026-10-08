@@ -1,61 +1,0 @@
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   4%|▎         | 12/339 [00:00<00:03, 84.15it/s]Loading weights:   8%|▊         | 27/339 [00:00<00:08, 36.93it/s]Loading weights:  10%|▉         | 33/339 [00:00<00:09, 31.45it/s]Loading weights:  11%|█         | 37/339 [00:01<00:17, 16.99it/s]Loading weights:  12%|█▏        | 40/339 [00:01<00:16, 18.29it/s]Loading weights:  13%|█▎        | 43/339 [00:01<00:17, 17.25it/s]Loading weights:  14%|█▎        | 46/339 [00:02<00:22, 12.92it/s]Loading weights:  29%|██▉       | 99/339 [00:02<00:03, 74.79it/s]Loading weights:  40%|███▉      | 134/339 [00:02<00:02, 92.21it/s]Loading weights:  44%|████▍     | 150/339 [00:02<00:01, 96.66it/s]Loading weights:  49%|████▊     | 165/339 [00:03<00:01, 93.94it/s]Loading weights:  53%|█████▎    | 178/339 [00:03<00:01, 85.32it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 104.22it/s]
-[02:12:50 rss=3.0G] TARGET loaded
-[free] RSS 2629 MiB -> 533 MiB (released 2096 MiB)
-[02:13:04 rss=0.5G] B1 target: 64 contexts; min t 55; len_mismatch pairs 0
-Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/339 [00:00<00:07, 45.36it/s]Loading weights:   3%|▎         | 10/339 [00:00<00:06, 47.36it/s]Loading weights:   4%|▍         | 15/339 [00:00<00:12, 25.66it/s]Loading weights:  10%|█         | 35/339 [00:00<00:04, 68.17it/s]Loading weights:  17%|█▋        | 57/339 [00:00<00:02, 103.31it/s]Loading weights:  21%|██        | 70/339 [00:00<00:03, 86.46it/s] Loading weights:  26%|██▋       | 89/339 [00:01<00:02, 90.94it/s]Loading weights:  29%|██▉       | 100/339 [00:01<00:03, 73.32it/s]Loading weights:  32%|███▏      | 109/339 [00:01<00:03, 75.74it/s]Loading weights:  35%|███▍      | 118/339 [00:01<00:03, 63.16it/s]Loading weights:  43%|████▎     | 147/339 [00:02<00:05, 32.84it/s]Loading weights:  50%|█████     | 171/339 [00:03<00:03, 48.82it/s]Loading weights:  54%|█████▎    | 182/339 [00:03<00:03, 52.07it/s]Loading weights:  62%|██████▏   | 211/339 [00:03<00:01, 78.87it/s]Loading weights:  67%|██████▋   | 226/339 [00:03<00:01, 62.03it/s]Loading weights:  70%|███████   | 238/339 [00:03<00:01, 65.21it/s]Loading weights:  85%|████████▍ | 288/339 [00:04<00:00, 105.42it/s]Loading weights:  89%|████████▉ | 302/339 [00:04<00:00, 101.61it/s]Loading weights:  93%|█████████▎| 314/339 [00:04<00:00, 103.44it/s]Loading weights: 100%|██████████| 339/339 [00:04<00:00, 76.65it/s] 
-[02:13:09 rss=2.0G] AV loaded; prompt 125 tok, marker at 111, injection_scale=150.0
-[free] RSS 1835 MiB -> 486 MiB (released 1349 MiB)
-[02:23:54 rss=0.5G] B1 av: 64/64 generations
-[02:23:54 rss=0.5G] wrote 8 tasks to b1_agent_tasks_slot_verify.jsonl
-AWAITING_AGENT_TASKS /Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/b1_agent_tasks_slot_verify.jsonl 8
-EXIT 0
-[02:24:42 rss=0.4G] B1 slots: 192 sentences, 8 candidates; eligible carriers 0/64
-[02:24:42 rss=0.4G] wrote 0 tasks to b1_agent_tasks_fact_swap.jsonl
-[02:24:42 rss=0.4G] wrote 0 tasks to b1_agent_tasks_swapcheck.jsonl
-[02:24:42 rss=0.4G] B1 swap: valid swaps 0/0
-[02:24:42 rss=0.5G] wrote 0 tasks to b1_agent_tasks_rewrite.jsonl
-[02:24:42 rss=0.5G] wrote 0 tasks to b1_agent_tasks_equiv.jsonl
-[02:24:42 rss=0.5G] B1 realizations: 0; valid paraphrases 0/0
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   0%|          | 1/253 [00:00<04:05,  1.02it/s]Loading weights:   4%|▎         | 9/253 [00:01<00:24,  9.84it/s]Loading weights:   6%|▋         | 16/253 [00:01<00:18, 12.71it/s]Loading weights: 100%|██████████| 253/253 [00:01<00:00, 151.57it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:24:47 rss=2.0G] AR loaded: 21 layers, mse_scale=59.867
-[02:25:01 rss=2.0G] B1 ar: 50/64 texts, 0.29 s/forward
-[free] RSS 2085 MiB -> 571 MiB (released 1515 MiB)
-[02:25:05 rss=0.6G] B1 ar done: 64/64 texts, 64 forwards
-[02:25:05 rss=0.6G] DISCONFIRMATION: 2026-09-09T02:25:05  B1  B1  threshold=CI95 (cluster by pair, eval) of mean D = [μ_A(h_A) − μ_B(h_A)] − [μ_A(h_B) − μ_B(h_B)] over valid English paraphrases (orig excluded) ≤ 0 → MET; > 0 → NOT MET; straddles or eligible eval carriers < 32 → INCONCLUSIVE  observed=mean D=nan [nan,nan] n=0 k=0 (eligible eval carriers in primary 0, of 48 eval contexts); both-sides-correct nan [nan,nan] n=0 k=0; D orig-only nan [nan,nan] n=0 k=0; by family: n/a; mean cos(h_A,h_B) 0.9927; omission 64 redundant 0 dup_sentence 0 swap_invalid 0 no_valid_paraphrase 0; av_asserts mismatch 0; invalid realizations by transform {"light1": 0, "light2": 0, "aggr1": 0, "aggr2": 0}  INCONCLUSIVE  MET/INCONCLUSIVE = no detectable preference reversal under this scorer at this position with this n (never 'the fact is absent from the activation')
-Traceback (most recent call last):
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/b1_pairs.py", line 410, in <module>
-    main()
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/b1_pairs.py", line 404, in main
-    b1_analyze.run(labels=None)
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/overnight/b1_analyze.py", line 185, in run
-    cirow("D (paraphrase-averaged μ, orig excluded)", ev.D, ev.pair_id), cirow("D (orig only)", ev.D_orig, ev.pair_id),
-                                                      ^^^^
-  File "/Users/mbp_qasim/repos/mech_interp_nla-nightshift/.venv/lib/python3.12/site-packages/pandas/core/generic.py", line 6194, in __getattr__
-    return object.__getattribute__(self, name)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'DataFrame' object has no attribute 'D'
-[02:25:31 rss=0.4G] B1 slots: 192 sentences, 8 candidates; eligible carriers 0/64
-[02:25:31 rss=0.4G] B1 swap: valid swaps 0/0
-[02:25:32 rss=0.5G] B1 realizations: 0; valid paraphrases 0/0
-Loading weights:   0%|          | 0/253 [00:00<?, ?it/s]Loading weights:   0%|          | 1/253 [00:00<00:47,  5.34it/s]Loading weights:  45%|████▌     | 114/253 [00:00<00:00, 262.74it/s]Loading weights: 100%|██████████| 253/253 [00:00<00:00, 515.49it/s]
-[transformers] [1mQwen2ForCausalLM LOAD REPORT[0m from: /Users/mbp_qasim/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6
-Key               | Status  | 
-------------------+---------+-
-lm_head.weight    | MISSING | 
-model.norm.weight | MISSING | 
-
-Notes:
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-[02:25:34 rss=7.9G] AR loaded: 21 layers, mse_scale=59.867
-[free] RSS 8105 MiB -> 731 MiB (released 7374 MiB)
-[02:25:34 rss=0.7G] B1 ar done: 64/64 texts, 0 forwards
-[02:25:34 rss=0.7G] B1 analysis written (claude); kill: INCONCLUSIVE; eligible eval in primary 0
-[02:25:34 rss=0.7G] B1 done: 12.4 min cumulative (cap 150)

@@ -1,6 +1,6 @@
 """fve_claims machinery for ceselder/qwen3.6-27b-nla-rl on CUDA. Mirrors common.py's interface (Settings,
-log, cos) but is built directly from scripts/nla27b_smoke.py (branch pod/mtl-setup, proven working: 8/8
-examples, cos_own 0.9657, reproduced on this pod). Does NOT use overnight/nla_lib.py -- that pipeline is
+log, cos) but is built directly from scripts/nla27b_smoke.py (proven working: 8/8
+examples, cos_own 0.9657, reproduced on the pod). Does NOT use src/nla_lib.py -- that pipeline is
 7B/MPS-specific and uses a different injection mechanism (embedding replacement) than this model's
 (additive norm-matched at block 1).
 
