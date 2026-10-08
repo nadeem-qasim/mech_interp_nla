@@ -55,6 +55,19 @@ removed from the explanation, in percentage points.
 - **27B deviation:** the released 27B pair ships no separate target model, so its AV base weights produce the
   activations, and the FVE denominator is computed from the 100 activations rather than a training corpus.
 
+**Compute.** The two NLAs ran on different hardware; the pipeline code is shared, with a model-specific module for each.
+
+| | 7B (Qwen2.5-7B-Instruct, layer 20) | 27B (Qwen3.6-27B, layer 42) |
+|---|---|---|
+| where | locally, MacBook Pro M4 Pro, 48 GB, PyTorch on MPS | rented RunPod GPU pod (CUDA; mostly H100 SXM, some A100 80GB), checkpoints on a network volume |
+| model code | `src/nla_lib.py` | `fve_claims/common_27b.py`, download via `scripts/dl27b.py` |
+| AV explanation | ~10 s each (mean 9.7 s, 100 docs) | ~20 s each (mean 20.1 s, first 25 docs) |
+| AR scoring | local | all 100 docs, 2,228 AR passes, ~3 min; AR uses ~35 GB GPU memory |
+| logs | `fve_claims/out/` | `fve_claims/logs_27b_pod/` |
+
+Claim labelling and deletion generation ran locally for both models; the pod's activations, explanations and
+scores were copied back to the laptop for analysis.
+
 ## Reproducing the headline
 
 ```sh
